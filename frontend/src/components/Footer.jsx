@@ -16,8 +16,11 @@ const Footer = () => {
           {/* Company Info */}
           <div className="md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
-              <Truck className="h-8 w-8 text-blue-400" />
-              <span className="text-2xl font-bold">GENVEX Team</span>
+              <img 
+                src="/genvex-logo.svg" 
+                alt="GENVEX Team Logo" 
+                className="h-10 w-auto filter brightness-0 invert"
+              />
             </div>
             <p className="text-gray-300 mb-4 leading-relaxed">
               Hamburg's premier Amazon Delivery Service Partner, committed to delivering 
