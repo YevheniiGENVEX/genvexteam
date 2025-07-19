@@ -1,0 +1,149 @@
+import React, { useState, useEffect } from 'react';
+import { ChevronDown, ChevronUp, HelpCircle, MessageCircle } from 'lucide-react';
+import { Card, CardContent } from './ui/card';
+import { Button } from './ui/button';
+import { mockAPI_UA } from '../mock_ua';
+
+const FAQ_UA = () => {
+  const [faqs, setFaqs] = useState([]);
+  const [openItems, setOpenItems] = useState({});
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const loadFAQs = async () => {
+      try {
+        const response = await mockAPI_UA.getFAQs();
+        setFaqs(response.data);
+      } catch (error) {
+        console.error('Помилка завантаження FAQ:', error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    loadFAQs();
+  }, []);
+
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  const toggleItem = (id) => {
+    setOpenItems(prev => ({
+      ...prev,
+      [id]: !prev[id]
+    }));
+  };
+
+  if (loading) {
+    return (
+      <section id="faq" className="py-16 bg-gray-50">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center">
+            <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mx-auto"></div>
+            <p className="mt-4 text-gray-600">Завантаження частих питань...</p>
+          </div>
+        </div>
+      </section>
+    );
+  }
+
+  return (
+    <section id="faq" className="py-16 bg-gray-50">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Header */}
+        <div className="text-center mb-12">
+          <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+            <HelpCircle className="h-8 w-8 text-blue-600" />
+          </div>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            FAQ для кандидатів
+          </h2>
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            Знайдіть відповіді на найпоширеніші питання про приєднання до команди GENVEX. 
+            Не можете знайти те, що шукаєте? Не соромтеся звертатися до нас безпосередньо.
+          </p>
+        </div>
+
+        {/* FAQ Items */}
+        <div className="space-y-4">
+          {faqs.map((faq) => (
+            <Card key={faq.id} className="shadow-lg border-0 overflow-hidden">
+              <CardContent className="p-0">
+                <button
+                  onClick={() => toggleItem(faq.id)}
+                  className="w-full px-6 py-4 text-left flex items-center justify-between hover:bg-blue-50 transition-colors duration-200"
+                >
+                  <h3 className="text-lg font-semibold text-gray-900 pr-4">
+                    {faq.question}
+                  </h3>
+                  <div className="flex-shrink-0">
+                    {openItems[faq.id] ? (
+                      <ChevronUp className="h-5 w-5 text-blue-600" />
+                    ) : (
+                      <ChevronDown className="h-5 w-5 text-blue-600" />
+                    )}
+                  </div>
+                </button>
+                
+                {openItems[faq.id] && (
+                  <div className="px-6 pb-4 border-t border-gray-100">
+                    <p className="text-gray-700 leading-relaxed pt-4">
+                      {faq.answer}
+                    </p>
+                  </div>
+                )}
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+
+        {/* Additional Help Section */}
+        <div className="mt-12 text-center">
+          <Card className="bg-gradient-to-br from-blue-50 to-blue-100 shadow-lg border-0">
+            <CardContent className="p-8">
+              <MessageCircle className="h-12 w-12 text-blue-600 mx-auto mb-4" />
+              <h3 className="text-xl font-bold text-gray-900 mb-3">
+                Залишились питання?
+              </h3>
+              <p className="text-gray-700 mb-6 max-w-2xl mx-auto">
+                Наша команда тут, щоб допомогти! Зверніться до нас безпосередньо, і ми надамо 
+                персоналізовані відповіді на будь-які конкретні питання щодо приєднання до команди GENVEX.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Button 
+                  onClick={() => scrollToSection('contact')}
+                  className="bg-blue-600 hover:bg-blue-700 text-white transition-colors duration-200"
+                  size="lg"
+                >
+                  Зв'яжіться з нами зараз
+                </Button>
+                <Button 
+                  onClick={() => window.open(`mailto:genvexteam@gmail.com?subject=Питання щодо позиції водія доставки`, '_blank')}
+                  variant="outline"
+                  className="border-blue-600 text-blue-600 hover:bg-white transition-colors duration-200"
+                  size="lg"
+                >
+                  Напишіть нам безпосередньо
+                </Button>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+
+        {/* Quick Contact Info */}
+        <div className="mt-8 text-center text-sm text-gray-600">
+          <p>
+            <strong>Телефон:</strong> +49 176 400 0000 | 
+            <strong className="ml-2">Електронна пошта:</strong> genvexteam@gmail.com
+          </p>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default FAQ_UA;
