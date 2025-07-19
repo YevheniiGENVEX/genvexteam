@@ -1,0 +1,13 @@
+<svg width="400" height="200" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Main GENVEX text -->
+  <text x="50" y="80" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="#1e1b4b">GENVE</text>
+  <text x="250" y="80" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="#2563eb">X</text>
+  
+  <!-- TEAM text -->
+  <text x="270" y="110" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#2563eb">TEAM</text>
+  
+  <!-- Flowing wave design -->
+  <path d="M 250 120 Q 300 100 350 120 Q 380 130 400 115" stroke="#2563eb" stroke-width="8" fill="none"/>
+  <path d="M 250 135 Q 300 115 350 135 Q 380 145 400 130" stroke="#3b82f6" stroke-width="6" fill="none"/>
+  <path d="M 250 148 Q 300 128 350 148 Q 380 158 400 143" stroke="#60a5fa" stroke-width="4" fill="none"/>
+</svg>
