@@ -19,8 +19,20 @@ const Header = () => {
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
           <div className="flex items-center space-x-2">
-            <Truck className="h-8 w-8 text-blue-600" />
-            <span className="text-2xl font-bold text-gray-900">GENVEX Team</span>
+            <img 
+              src="https://i.imgur.com/YourLogoURL.png" 
+              alt="GENVEX Team Logo" 
+              className="h-10 w-auto"
+              onError={(e) => {
+                // Fallback to text logo if image fails to load
+                e.target.style.display = 'none';
+                e.target.nextSibling.style.display = 'flex';
+              }}
+            />
+            <div className="flex items-center space-x-2" style={{display: 'none'}}>
+              <Truck className="h-8 w-8 text-blue-600" />
+              <span className="text-2xl font-bold text-gray-900">GENVEX Team</span>
+            </div>
           </div>
 
           {/* Desktop Navigation */}
