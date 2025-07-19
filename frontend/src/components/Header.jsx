@@ -20,19 +20,10 @@ const Header = () => {
           {/* Logo */}
           <div className="flex items-center space-x-2">
             <img 
-              src="https://i.imgur.com/YourLogoURL.png" 
+              src="/genvex-logo.svg" 
               alt="GENVEX Team Logo" 
-              className="h-10 w-auto"
-              onError={(e) => {
-                // Fallback to text logo if image fails to load
-                e.target.style.display = 'none';
-                e.target.nextSibling.style.display = 'flex';
-              }}
+              className="h-12 w-auto"
             />
-            <div className="flex items-center space-x-2" style={{display: 'none'}}>
-              <Truck className="h-8 w-8 text-blue-600" />
-              <span className="text-2xl font-bold text-gray-900">GENVEX Team</span>
-            </div>
           </div>
 
           {/* Desktop Navigation */}
