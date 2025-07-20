@@ -111,10 +111,10 @@ const Contact_UA = () => {
                     <div>
                       <p className="font-medium text-gray-900">Телефон</p>
                       <a 
-                        href="tel:+491764000000" 
+                        href="tel:+4917640099823" 
                         className="text-blue-600 hover:text-blue-700 transition-colors duration-200"
                       >
-                        +49 176 400 0000
+                        +49 176 400 99823
                       </a>
                     </div>
                   </div>
