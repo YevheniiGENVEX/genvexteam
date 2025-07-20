@@ -112,7 +112,7 @@ const Footer_UA = () => {
 
               <div className="flex items-center space-x-2 pt-2">
                 <Clock className="h-4 w-4 text-blue-400 flex-shrink-0" />
-                <span className="text-gray-300">Пн-Пт: 7:00 - 18:00</span>
+                <span className="text-gray-300">Пн-Сб: 8:00 - 22:00</span>
               </div>
             </div>
           </div>
