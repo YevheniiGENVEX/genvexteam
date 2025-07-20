@@ -138,7 +138,7 @@ const FAQ = () => {
         <div className="mt-8 text-center text-sm text-gray-600">
           <p>
             <strong>Telefon:</strong> +49 176 400 99823 | 
-            <strong className="ml-2">Email:</strong> genvexteam@gmail.com
+            <strong className="ml-2">E-Mail:</strong> genvexteam@gmail.com
           </p>
         </div>
       </div>
