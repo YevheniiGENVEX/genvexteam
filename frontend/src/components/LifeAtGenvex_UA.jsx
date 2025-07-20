@@ -33,13 +33,10 @@ const LifeAtGenvex_UA = () => {
   ];
 
   const dailySchedule = [
-    { time: "6:30", activity: "Прибуття до депо, перевірка безпеки", icon: Coffee },
-    { time: "7:00", activity: "Командний брифінг та планування маршруту", icon: Users },
-    { time: "7:30", activity: "Огляд транспорту та завантаження", icon: Truck },
-    { time: "8:00", activity: "Початок маршруту доставки", icon: MapPin },
-    { time: "14:00", activity: "Обідня перерва та перевірка транспорту", icon: Coffee },
-    { time: "14:30", activity: "Денні доставки", icon: MapPin },
-    { time: "17:30", activity: "Повернення до депо, завершальні процедури", icon: Award }
+    { time: "6:30", activity: "Прибуття до депо", icon: Coffee },
+    { time: "10:50", activity: "Завантаження підготовленого маршруту", icon: Truck },
+    { time: "11:00", activity: "Відправлення на доставку", icon: MapPin },
+    { time: "18:00", activity: "Повернення до депо, завершальні процедури", icon: Award }
   ];
 
   return (
