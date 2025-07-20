@@ -171,7 +171,7 @@ const LifeAtGenvex_UA = () => {
         )}
 
         {/* Culture Highlights */}
-        <div className="mt-16 grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="mt-16 grid md:grid-cols-3 gap-6">
           <Card className="text-center p-6 border-0 shadow-lg hover:shadow-xl transition-shadow duration-300">
             <CardContent className="pt-6">
               <div className="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3">
