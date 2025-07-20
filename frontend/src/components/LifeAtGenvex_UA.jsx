@@ -185,16 +185,6 @@ const LifeAtGenvex_UA = () => {
           <Card className="text-center p-6 border-0 shadow-lg hover:shadow-xl transition-shadow duration-300">
             <CardContent className="pt-6">
               <div className="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3">
-                <Award className="h-6 w-6 text-blue-600" />
-              </div>
-              <h3 className="font-semibold text-gray-900 mb-2">Визнання</h3>
-              <p className="text-sm text-gray-600">Регулярна оцінка та винагороди</p>
-            </CardContent>
-          </Card>
-
-          <Card className="text-center p-6 border-0 shadow-lg hover:shadow-xl transition-shadow duration-300">
-            <CardContent className="pt-6">
-              <div className="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3">
                 <Truck className="h-6 w-6 text-blue-600" />
               </div>
               <h3 className="font-semibold text-gray-900 mb-2">Сучасний автопарк</h3>
