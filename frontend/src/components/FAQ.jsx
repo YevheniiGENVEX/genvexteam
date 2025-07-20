@@ -137,7 +137,7 @@ const FAQ = () => {
         {/* Quick Contact Info */}
         <div className="mt-8 text-center text-sm text-gray-600">
           <p>
-            <strong>Phone:</strong> +49 176 400 0000 | 
+            <strong>Telefon:</strong> +49 176 400 99823 | 
             <strong className="ml-2">Email:</strong> genvexteam@gmail.com
           </p>
         </div>
