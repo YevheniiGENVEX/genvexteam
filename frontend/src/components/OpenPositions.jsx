@@ -15,22 +15,21 @@ const OpenPositions = () => {
   const requirements = [
     "Führerschein Klasse B (oder Bereitschaft zum Erwerb)",
     "Zuverlässigkeit und Pünktlichkeit",
-    "Körperliche Fitness für Pakethandling",
+    "Körperliche Fitness für Pakethandling (90% der Pakete wiegen max. 5kg)",
     "Grundkenntnisse in Deutsch oder Englisch",
-    "Saubere Fahrtenschreibung",
-    "Smartphone für Lieferapp-Nutzung wird von uns gestellt"
+    "Saubere Fahrtenschreibung"
   ];
 
   const offerings = [
     "Attraktives Gehalt von €15,50/Stunde",
     "Zusätzlich €10 netto täglich für Verpflegung",
-    "Leistungsbasierte monatliche Boni bis zu €300",
     "Umfassende bezahlte Schulungsprogramme",
     "Vollzeitstelle mit 40 Stunden/Woche",
     "Moderne Lieferfahrzeuge gestellt",
+    "Smartphone und Arbeitskleidung werden bereitgestellt",
     "Unterstützendes Teamumfeld und Mentoring",
     "Aufstiegsmöglichkeiten im Amazon-Netzwerk",
-    "Mitarbeitervorteile und Versicherungsoptionen"
+    "Krankenversicherung und weitere Sozialleistungen"
   ];
 
   return (
@@ -134,7 +133,7 @@ const OpenPositions = () => {
                 </div>
               </div>
               <p className="text-sm text-blue-700 mt-3 font-medium">
-                Gesamtvergütung: Über €2.700/Monat + Leistungsboni
+                Gesamtvergütung: Über €2.700/Monat
               </p>
             </div>
 

@@ -11,9 +11,9 @@ export const mockData = {
 
   // Kontaktinformationen
   contact: {
-    address: "Zamok 20, 21029 Hamburg, Deutschland",
+    address: "Unterm Heilbrunnen 8, 21029 Hamburg, Deutschland",
     email: "genvexteam@gmail.com",
-    phone: "+49 176 400 0000"
+    phone: "+49 176 400 99823"
   },
 
   // FAQ-Daten
@@ -21,7 +21,7 @@ export const mockData = {
     {
       id: 1,
       question: "Wie sind die Arbeitszeiten für Zustellfahrer?",
-      answer: "Unsere Zustellfahrer arbeiten normalerweise in 8-Stunden-Schichten, die gegen 7:00 Uhr beginnen. Wir bieten Vollzeitstellen mit etwa 40 Stunden pro Woche an, einschließlich einiger Wochenendarbeit nach Bedarf."
+      answer: "Unsere Zustellfahrer arbeiten normalerweise in 8-Stunden-Schichten, die gegen 6:30 Uhr beginnen. Sie laden um 10:50 Uhr und fahren um 11:00 Uhr los. Die Rückkehr ist um 18:00 Uhr. Wir bieten Vollzeitstellen mit etwa 40 Stunden pro Woche an."
     },
     {
       id: 2,
@@ -35,28 +35,28 @@ export const mockData = {
     },
     {
       id: 4,
-      question: "Wie hoch ist das Startgehalt und gibt es Boni?",
-      answer: "Das Startgehalt beträgt €15,50 pro Stunde plus €10 netto täglich für Verpflegung. Zusätzlich bieten wir leistungsbasierte Boni bis zu €300 monatlich. Wir führen auch regelmäßige Gehaltsüberprüfungen und Aufstiegsmöglichkeiten durch."
+      question: "Wie hoch ist das Startgehalt?",
+      answer: "Das Startgehalt beträgt €15,50 pro Stunde plus €10 netto täglich für Verpflegung. Das bedeutet eine Gesamtvergütung von über €2.700 pro Monat bei Vollzeitbeschäftigung."
     },
     {
       id: 5,
       question: "Stellen Sie Uniformen und Ausrüstung zur Verfügung?",
-      answer: "Ja, wir stellen Uniformen, Sicherheitsausrüstung, Lieferscanner und alle notwendigen Werkzeuge zur Verfügung. Sie benötigen ein Smartphone für die Lieferapp, aber wir führen Sie durch die Einrichtung."
+      answer: "Ja, wir stellen Uniformen, Sicherheitsausrüstung, Smartphones mit vorinstallierter Lieferapp und alle notwendigen Werkzeuge zur Verfügung. Sie müssen sich um nichts kümmern."
     },
     {
       id: 6,
       question: "Welche körperlichen Anforderungen gibt es?",
-      answer: "Fahrer sollten in der Lage sein, Pakete bis zu 23 kg zu heben, längere Zeit zu gehen und bei verschiedenen Wetterbedingungen zu arbeiten. Wir bieten Schulungen zu ordnungsgemäßen Hebetechniken und Sicherheitsverfahren."
+      answer: "Fahrer sollten körperlich fit sein für das Pakethandling. 90% der Pakete wiegen maximal 5kg, nur sehr selten sind schwerere Pakete bis 23kg dabei. Wir bieten Schulungen zu ordnungsgemäßen Hebetechniken und Sicherheitsverfahren."
     },
     {
       id: 7,
       question: "Wie bewerbe ich mich und wie läuft der Einstellungsprozess ab?",
-      answer: "Reichen Sie Ihre Bewerbung über unser Kontaktformular oder per E-Mail ein. Der Prozess umfasst Bewerbungsüberprüfung, Telefoninterview, persönliches Interview, Hintergrundüberprüfung und Drogentest. Der gesamte Prozess dauert normalerweise 1-2 Wochen."
+      answer: "Reichen Sie Ihre Bewerbung über unser Kontaktformular oder per E-Mail ein. Der Prozess umfasst Bewerbungsüberprüfung, Telefoninterview, persönliches Interview und Hintergrundüberprüfung. Der gesamte Prozess dauert normalerweise 1-2 Wochen."
     },
     {
       id: 8,
       question: "Bieten Sie Vorteile und Karriereentwicklung an?",
-      answer: "Wir bieten verschiedene Vorteile, einschließlich Krankenversicherungsoptionen, bezahlter Freizeit und Mitarbeiterrabatten. Es gibt Möglichkeiten, zum Fahrtrainer, Dispatcher oder zu Führungsrollen in unserem wachsenden Netzwerk aufzusteigen."
+      answer: "Wir bieten Krankenversicherung und weitere Sozialleistungen. Es gibt Möglichkeiten, zum Fahrtrainer, Dispatcher oder zu Führungsrollen in unserem wachsenden Netzwerk aufzusteigen."
     }
   ],
 

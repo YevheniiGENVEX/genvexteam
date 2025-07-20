@@ -16,30 +16,27 @@ const LifeAtGenvex = () => {
 
   const teamPhotos = [
     {
-      title: "Our Delivery Fleet",
-      description: "Modern, well-maintained vehicles equipped with the latest delivery technology",
+      title: "Unsere Lieferflotte",
+      description: "Moderne, gut gewartete Fahrzeuge mit neuester Liefertechnologie ausgestattet",
       image: "https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?w=400&h=300&fit=crop"
     },
     {
-      title: "Team Meeting",
-      description: "Daily briefings ensure everyone is prepared and supported",
+      title: "Arbeitsplatz",
+      description: "Organisierte und effiziente Paket-Sortierung und Beladung",
       image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=300&fit=crop"
     },
     {
-      title: "Loading Station",
-      description: "Organized and efficient package sorting and loading process",
+      title: "Ladestation",
+      description: "Strukturierte und effiziente Verfahren für Paketsortierung und -verladung",
       image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=400&h=300&fit=crop"
     }
   ];
 
   const dailySchedule = [
-    { time: "6:30 AM", activity: "Arrive at depot, safety check", icon: Coffee },
-    { time: "7:00 AM", activity: "Team briefing and route planning", icon: Users },
-    { time: "7:30 AM", activity: "Vehicle inspection and loading", icon: Truck },
-    { time: "8:00 AM", activity: "Start delivery route", icon: MapPin },
-    { time: "2:00 PM", activity: "Lunch break and vehicle check", icon: Coffee },
-    { time: "2:30 PM", activity: "Afternoon deliveries", icon: MapPin },
-    { time: "5:30 PM", activity: "Return to depot, end-of-day procedures", icon: Award }
+    { time: "6:30", activity: "Ankunft im Depot", icon: Coffee },
+    { time: "10:50", activity: "Beladen der vorbereiteten Tour", icon: Truck },
+    { time: "11:00", activity: "Abfahrt zur Zustellung", icon: MapPin },
+    { time: "18:00", activity: "Rückkehr zum Depot, Abschlussverfahren", icon: Award }
   ];
 
   return (
@@ -48,11 +45,11 @@ const LifeAtGenvex = () => {
         {/* Header */}
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Life at GENVEX Team
+            Leben bei GENVEX Team
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Discover what it's really like to work with Hamburg's premier delivery team. 
-            From daily routines to team culture, get an inside look at your future workplace.
+            Entdecken Sie, wie es wirklich ist, bei Hamburgs führendem Lieferteam zu arbeiten. 
+            Von täglichen Routinen bis hin zur Teamkultur - erhalten Sie einen Einblick in Ihren zukünftigen Arbeitsplatz.
           </p>
         </div>
 
@@ -68,7 +65,7 @@ const LifeAtGenvex = () => {
             }`}
           >
             <Clock className="h-4 w-4 mr-2" />
-            Typical Day
+            Typischer Arbeitstag
           </Button>
           <Button
             onClick={() => setActiveTab('team-photos')}
@@ -80,7 +77,7 @@ const LifeAtGenvex = () => {
             }`}
           >
             <Users className="h-4 w-4 mr-2" />
-            Team & Fleet
+            Team & Fahrzeugflotte
           </Button>
         </div>
 
@@ -91,7 +88,7 @@ const LifeAtGenvex = () => {
               <CardHeader className="bg-gradient-to-r from-blue-50 to-white">
                 <CardTitle className="text-2xl text-gray-900 flex items-center">
                   <Clock className="h-6 w-6 mr-2 text-blue-600" />
-                  A Day in the Life of a GENVEX Driver
+                  Ein Tag im Leben eines GENVEX Fahrers
                 </CardTitle>
               </CardHeader>
               <CardContent className="p-8">
@@ -117,14 +114,14 @@ const LifeAtGenvex = () => {
                 
                 <div className="mt-8 p-6 bg-gradient-to-br from-blue-50 to-blue-100 rounded-lg">
                   <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                    What Makes Our Workday Special
+                    Was unseren Arbeitstag besonders macht
                   </h3>
                   <ul className="text-gray-700 space-y-2">
-                    <li>• <strong>Flexibility:</strong> Routes are planned efficiently to minimize stress</li>
-                    <li>• <strong>Support:</strong> Always connected to our dispatch team for assistance</li>
-                    <li>• <strong>Technology:</strong> Advanced GPS and delivery apps make navigation easy</li>
-                    <li>• <strong>Community:</strong> Build relationships with regular customers</li>
-                    <li>• <strong>Achievement:</strong> See the direct impact of your work every day</li>
+                    <li>• <strong>Flexibilität:</strong> Routen sind effizient geplant, um Stress zu minimieren</li>
+                    <li>• <strong>Unterstützung:</strong> Immer verbunden mit unserem Dispatch-Team für Hilfe</li>
+                    <li>• <strong>Technologie:</strong> Erweiterte GPS- und Lieferungs-Apps machen die Navigation einfach</li>
+                    <li>• <strong>Gemeinschaft:</strong> Aufbau von Beziehungen zu Stammkunden</li>
+                    <li>• <strong>Erfolg:</strong> Sehen Sie jeden Tag die direkte Auswirkung Ihrer Arbeit</li>
                   </ul>
                 </div>
               </CardContent>
@@ -159,13 +156,13 @@ const LifeAtGenvex = () => {
                 <div className="bg-gradient-to-br from-blue-100 to-blue-50 rounded-lg p-12 mb-6">
                   <PlayCircle className="h-16 w-16 text-blue-600 mx-auto mb-4" />
                   <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                    Watch: Life as a GENVEX Driver
+                    Video: Leben als GENVEX Fahrer
                   </h3>
                   <p className="text-gray-600 mb-4">
-                    Coming Soon: An inside look at what it's really like to be part of our team
+                    Demnächst verfügbar: Ein Einblick, wie es wirklich ist, Teil unseres Teams zu sein
                   </p>
                   <Badge className="bg-blue-100 text-blue-800">
-                    Video Available Soon
+                    Video bald verfügbar
                   </Badge>
                 </div>
               </CardContent>
@@ -180,8 +177,8 @@ const LifeAtGenvex = () => {
               <div className="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3">
                 <Users className="h-6 w-6 text-blue-600" />
               </div>
-              <h3 className="font-semibold text-gray-900 mb-2">Team Spirit</h3>
-              <p className="text-sm text-gray-600">Strong bonds and mutual support</p>
+              <h3 className="font-semibold text-gray-900 mb-2">Teamgeist</h3>
+              <p className="text-sm text-gray-600">Starke Bindungen und gegenseitige Unterstützung</p>
             </CardContent>
           </Card>
 
@@ -190,8 +187,8 @@ const LifeAtGenvex = () => {
               <div className="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3">
                 <Award className="h-6 w-6 text-blue-600" />
               </div>
-              <h3 className="font-semibold text-gray-900 mb-2">Recognition</h3>
-              <p className="text-sm text-gray-600">Regular appreciation and rewards</p>
+              <h3 className="font-semibold text-gray-900 mb-2">Anerkennung</h3>
+              <p className="text-sm text-gray-600">Regelmäßige Wertschätzung und Belohnungen</p>
             </CardContent>
           </Card>
 
@@ -200,8 +197,8 @@ const LifeAtGenvex = () => {
               <div className="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3">
                 <Truck className="h-6 w-6 text-blue-600" />
               </div>
-              <h3 className="font-semibold text-gray-900 mb-2">Modern Fleet</h3>
-              <p className="text-sm text-gray-600">Well-maintained, reliable vehicles</p>
+              <h3 className="font-semibold text-gray-900 mb-2">Moderne Flotte</h3>
+              <p className="text-sm text-gray-600">Gut gewartete, zuverlässige Fahrzeuge</p>
             </CardContent>
           </Card>
 
@@ -210,8 +207,8 @@ const LifeAtGenvex = () => {
               <div className="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3">
                 <Coffee className="h-6 w-6 text-blue-600" />
               </div>
-              <h3 className="font-semibold text-gray-900 mb-2">Work-Life Balance</h3>
-              <p className="text-sm text-gray-600">Structured schedules, fair hours</p>
+              <h3 className="font-semibold text-gray-900 mb-2">Work-Life-Balance</h3>
+              <p className="text-sm text-gray-600">Strukturierte Zeitpläne, faire Arbeitszeiten</p>
             </CardContent>
           </Card>
         </div>
@@ -219,18 +216,18 @@ const LifeAtGenvex = () => {
         {/* CTA Section */}
         <div className="mt-12 text-center">
           <h3 className="text-2xl font-bold text-gray-900 mb-4">
-            Ready to Join Our Team?
+            Bereit, Teil unseres Teams zu werden?
           </h3>
           <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
-            Experience the difference of working with a company that values its drivers and 
-            invests in their success. Your career in delivery starts here.
+            Erleben Sie den Unterschied der Arbeit mit einem Unternehmen, das seine Fahrer schätzt und 
+            in ihren Erfolg investiert. Ihre Karriere in der Lieferbranche beginnt hier.
           </p>
           <Button 
             onClick={() => scrollToSection('contact')}
             size="lg"
             className="bg-blue-600 hover:bg-blue-700 text-white px-8 transition-colors duration-200"
           >
-            Start Your Application Today
+            Starten Sie heute Ihre Bewerbung
           </Button>
         </div>
       </div>

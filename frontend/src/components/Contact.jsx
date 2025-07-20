@@ -47,7 +47,7 @@ const Contact = () => {
         setSubmitStatus('error');
       }
     } catch (error) {
-      console.error('Error submitting application:', error);
+      console.error('Fehler beim Senden der Bewerbung:', error);
       setSubmitStatus('error');
     } finally {
       setIsSubmitting(false);
@@ -60,11 +60,11 @@ const Contact = () => {
         {/* Header */}
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Get in Touch
+            Kontakt aufnehmen
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Ready to start your career with GENVEX Team? Get in touch with us today. 
-            We're here to answer your questions and guide you through the application process.
+            Bereit, Ihre Karriere mit dem GENVEX Team zu starten? Kontaktieren Sie uns noch heute. 
+            Wir sind hier, um Ihre Fragen zu beantworten und Sie durch den Bewerbungsprozess zu führen.
           </p>
         </div>
 
@@ -75,25 +75,25 @@ const Contact = () => {
               <CardHeader className="bg-gradient-to-r from-blue-50 to-white">
                 <CardTitle className="text-xl text-gray-900 flex items-center">
                   <MapPin className="h-5 w-5 mr-2 text-blue-600" />
-                  Visit Our Office
+                  Besuchen Sie unser Büro
                 </CardTitle>
               </CardHeader>
               <CardContent className="p-6">
                 <div className="space-y-4">
                   <div>
                     <p className="font-semibold text-gray-900">GENVEX Team</p>
-                    <p className="text-gray-700">Zamok 20</p>
-                    <p className="text-gray-700">21029 Hamburg, Germany</p>
+                    <p className="text-gray-700">Unterm Heilbrunnen 8</p>
+                    <p className="text-gray-700">21029 Hamburg, Deutschland</p>
                   </div>
                   
                   <div className="flex items-center space-x-2">
                     <Clock className="h-4 w-4 text-blue-600" />
-                    <span className="text-sm text-gray-600">Mon-Fri: 7:00 AM - 6:00 PM</span>
+                    <span className="text-sm text-gray-600">Mo-Sa: 8:00 - 22:00</span>
                   </div>
                   
                   <div className="pt-4 border-t border-gray-200">
                     <p className="text-sm text-gray-600">
-                      Located in the heart of Hamburg's logistics district, easily accessible by public transport.
+                      Im Herzen des Hamburger Logistikbezirks gelegen, gut mit öffentlichen Verkehrsmitteln erreichbar.
                     </p>
                   </div>
                 </div>
@@ -103,18 +103,18 @@ const Contact = () => {
             <Card className="shadow-lg border-0">
               <CardContent className="p-6">
                 <h3 className="text-lg font-semibold text-gray-900 mb-4">
-                  Contact Information
+                  Kontaktinformationen
                 </h3>
                 <div className="space-y-4">
                   <div className="flex items-center space-x-3">
                     <Phone className="h-5 w-5 text-blue-600" />
                     <div>
-                      <p className="font-medium text-gray-900">Phone</p>
+                      <p className="font-medium text-gray-900">Telefon</p>
                       <a 
-                        href="tel:+491764000000" 
+                        href="tel:+4917640099823" 
                         className="text-blue-600 hover:text-blue-700 transition-colors duration-200"
                       >
-                        +49 176 400 0000
+                        +49 176 400 99823
                       </a>
                     </div>
                   </div>
@@ -122,7 +122,7 @@ const Contact = () => {
                   <div className="flex items-center space-x-3">
                     <Mail className="h-5 w-5 text-blue-600" />
                     <div>
-                      <p className="font-medium text-gray-900">Email</p>
+                      <p className="font-medium text-gray-900">E-Mail</p>
                       <a 
                         href="mailto:genvexteam@gmail.com" 
                         className="text-blue-600 hover:text-blue-700 transition-colors duration-200"
@@ -140,13 +140,13 @@ const Contact = () => {
               <CardContent className="p-6">
                 <h3 className="text-lg font-semibold text-gray-900 mb-3 flex items-center">
                   <Clock className="h-5 w-5 mr-2 text-blue-600" />
-                  Our Response Promise
+                  Unser Antwort-Versprechen
                 </h3>
                 <ul className="space-y-2 text-sm text-gray-700">
-                  <li>• Application acknowledgment within 24 hours</li>
-                  <li>• Initial phone screening within 2-3 business days</li>
-                  <li>• Complete hiring process typically takes 1-2 weeks</li>
-                  <li>• Direct phone support during business hours</li>
+                  <li>• Bewerbungsbestätigung innerhalb von 24 Stunden</li>
+                  <li>• Erstes Telefon-Screening innerhalb von 2-3 Werktagen</li>
+                  <li>• Kompletter Einstellungsprozess dauert normalerweise 1-2 Wochen</li>
+                  <li>• Direkter Telefonsupport während der Geschäftszeiten</li>
                 </ul>
               </CardContent>
             </Card>
@@ -158,10 +158,10 @@ const Contact = () => {
               <CardHeader className="bg-gradient-to-r from-blue-50 to-white">
                 <CardTitle className="text-xl text-gray-900 flex items-center">
                   <Send className="h-5 w-5 mr-2 text-blue-600" />
-                  Submit Your Application
+                  Senden Sie Ihre Bewerbung
                 </CardTitle>
                 <Badge className="bg-green-100 text-green-800 w-fit">
-                  Fast Track Application
+                  Schnellbewerbung
                 </Badge>
               </CardHeader>
               <CardContent className="p-6">
@@ -169,26 +169,26 @@ const Contact = () => {
                   <div className="mb-6 p-4 bg-green-50 border border-green-200 rounded-lg">
                     <div className="flex items-center space-x-2">
                       <CheckCircle className="h-5 w-5 text-green-600" />
-                      <p className="text-green-800 font-medium">Application Submitted Successfully!</p>
+                      <p className="text-green-800 font-medium">Bewerbung erfolgreich eingereicht!</p>
                     </div>
                     <p className="text-green-700 text-sm mt-1">
-                      We'll contact you within 2-3 business days to schedule your interview.
+                      Wir werden Sie innerhalb von 2-3 Werktagen kontaktieren, um Ihr Interview zu planen.
                     </p>
                   </div>
                 )}
 
                 {submitStatus === 'error' && (
                   <div className="mb-6 p-4 bg-red-50 border border-red-200 rounded-lg">
-                    <p className="text-red-800 font-medium">Something went wrong</p>
+                    <p className="text-red-800 font-medium">Etwas ist schiefgelaufen</p>
                     <p className="text-red-700 text-sm mt-1">
-                      Please try again or contact us directly at genvexteam@gmail.com
+                      Bitte versuchen Sie es erneut oder kontaktieren Sie uns direkt unter genvexteam@gmail.com
                     </p>
                   </div>
                 )}
 
                 <form onSubmit={handleSubmit} className="space-y-4">
                   <div>
-                    <Label htmlFor="name">Full Name *</Label>
+                    <Label htmlFor="name">Vollständiger Name *</Label>
                     <Input
                       id="name"
                       name="name"
@@ -197,12 +197,12 @@ const Contact = () => {
                       value={formData.name}
                       onChange={handleInputChange}
                       className="mt-1"
-                      placeholder="Enter your full name"
+                      placeholder="Geben Sie Ihren vollständigen Namen ein"
                     />
                   </div>
 
                   <div>
-                    <Label htmlFor="email">Email Address *</Label>
+                    <Label htmlFor="email">E-Mail-Adresse *</Label>
                     <Input
                       id="email"
                       name="email"
@@ -211,12 +211,12 @@ const Contact = () => {
                       value={formData.email}
                       onChange={handleInputChange}
                       className="mt-1"
-                      placeholder="your.email@example.com"
+                      placeholder="ihre.email@beispiel.com"
                     />
                   </div>
 
                   <div>
-                    <Label htmlFor="phone">Phone Number *</Label>
+                    <Label htmlFor="phone">Telefonnummer *</Label>
                     <Input
                       id="phone"
                       name="phone"
@@ -230,7 +230,7 @@ const Contact = () => {
                   </div>
 
                   <div>
-                    <Label htmlFor="position">Position of Interest</Label>
+                    <Label htmlFor="position">Interessierte Position</Label>
                     <select
                       id="position"
                       name="position"
@@ -238,14 +238,14 @@ const Contact = () => {
                       onChange={handleInputChange}
                       className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
                     >
-                      <option value="delivery-driver">Delivery Driver (Full-time)</option>
-                      <option value="part-time-driver">Part-time Driver</option>
-                      <option value="other">Other Position</option>
+                      <option value="delivery-driver">Zustellfahrer (Vollzeit)</option>
+                      <option value="part-time-driver">Teilzeit-Fahrer</option>
+                      <option value="other">Andere Position</option>
                     </select>
                   </div>
 
                   <div>
-                    <Label htmlFor="message">Message or Questions (Optional)</Label>
+                    <Label htmlFor="message">Nachricht oder Fragen (Optional)</Label>
                     <Textarea
                       id="message"
                       name="message"
@@ -253,7 +253,7 @@ const Contact = () => {
                       value={formData.message}
                       onChange={handleInputChange}
                       className="mt-1"
-                      placeholder="Tell us about your experience, ask questions, or share anything else you'd like us to know..."
+                      placeholder="Erzählen Sie uns von Ihren Erfahrungen, stellen Sie Fragen oder teilen Sie uns alles andere mit, was wir wissen sollten..."
                     />
                   </div>
 
@@ -267,12 +267,12 @@ const Contact = () => {
                       {isSubmitting ? (
                         <>
                           <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-white mr-2"></div>
-                          Submitting Application...
+                          Bewerbung wird eingereicht...
                         </>
                       ) : (
                         <>
                           <Send className="h-4 w-4 mr-2" />
-                          Submit Application
+                          Bewerbung einreichen
                         </>
                       )}
                     </Button>
@@ -281,12 +281,12 @@ const Contact = () => {
 
                 <div className="mt-6 pt-6 border-t border-gray-200 text-center">
                   <p className="text-sm text-gray-600">
-                    Prefer to call? Reach us at{' '}
+                    Lieber anrufen? Erreichen Sie uns unter{' '}
                     <a 
-                      href="tel:+491764000000" 
+                      href="tel:+4917640099823" 
                       className="text-blue-600 hover:text-blue-700 font-medium transition-colors duration-200"
                     >
-                      +49 176 400 0000
+                      +49 176 400 99823
                     </a>
                   </p>
                 </div>
