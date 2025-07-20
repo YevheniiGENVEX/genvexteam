@@ -127,7 +127,7 @@ const FAQ = () => {
                   className="border-blue-600 text-blue-600 hover:bg-white transition-colors duration-200"
                   size="lg"
                 >
-                  Email Us Directly
+                  Direkt E-Mail senden
                 </Button>
               </div>
             </CardContent>
