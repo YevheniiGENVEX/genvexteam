@@ -18,7 +18,7 @@ const OpenPositions = () => {
     "Körperliche Fitness für Pakethandling",
     "Grundkenntnisse in Deutsch oder Englisch",
     "Saubere Fahrtenschreibung",
-    "Smartphone für Lieferapp-Nutzung"
+    "Smartphone für Lieferapp-Nutzung wird von uns gestellt"
   ];
 
   const offerings = [
