@@ -88,7 +88,7 @@ const Contact_UA = () => {
                   
                   <div className="flex items-center space-x-2">
                     <Clock className="h-4 w-4 text-blue-600" />
-                    <span className="text-sm text-gray-600">Пн-Пт: 7:00 - 18:00</span>
+                    <span className="text-sm text-gray-600">Пн-Сб: 8:00 - 22:00</span>
                   </div>
                   
                   <div className="pt-4 border-t border-gray-200">
