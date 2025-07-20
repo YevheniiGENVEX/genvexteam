@@ -93,10 +93,10 @@ const Footer_UA = () => {
               <div className="flex items-center space-x-2">
                 <Phone className="h-4 w-4 text-blue-400 flex-shrink-0" />
                 <a 
-                  href="tel:+491764000000"
+                  href="tel:+4917640099823"
                   className="text-gray-300 hover:text-blue-400 transition-colors duration-200"
                 >
-                  +49 176 400 0000
+                  +49 176 400 99823
                 </a>
               </div>
               
