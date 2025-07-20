@@ -119,7 +119,7 @@ const FAQ = () => {
                   className="bg-blue-600 hover:bg-blue-700 text-white transition-colors duration-200"
                   size="lg"
                 >
-                  Contact Us Now
+                  Kontaktieren Sie uns jetzt
                 </Button>
                 <Button 
                   onClick={() => window.open(`mailto:genvexteam@gmail.com?subject=Question about Delivery Driver Position`, '_blank')}
