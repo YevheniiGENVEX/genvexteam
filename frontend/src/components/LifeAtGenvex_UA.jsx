@@ -33,7 +33,7 @@ const LifeAtGenvex_UA = () => {
   ];
 
   const dailySchedule = [
-    { time: "6:30", activity: "Прибуття до депо", icon: Coffee },
+    { time: "10:30", activity: "Прибуття до депо", icon: Coffee },
     { time: "10:50", activity: "Завантаження підготовленого маршруту", icon: Truck },
     { time: "11:00", activity: "Відправлення на доставку", icon: MapPin },
     { time: "18:00", activity: "Повернення до депо, завершальні процедури", icon: Award }
