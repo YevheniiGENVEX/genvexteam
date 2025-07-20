@@ -122,7 +122,7 @@ const FAQ = () => {
                   Kontaktieren Sie uns jetzt
                 </Button>
                 <Button 
-                  onClick={() => window.open(`mailto:genvexteam@gmail.com?subject=Question about Delivery Driver Position`, '_blank')}
+                  onClick={() => window.open(`mailto:genvexteam@gmail.com?subject=Frage zur Zustellfahrer-Position`, '_blank')}
                   variant="outline"
                   className="border-blue-600 text-blue-600 hover:bg-white transition-colors duration-200"
                   size="lg"
