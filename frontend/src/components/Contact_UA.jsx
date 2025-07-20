@@ -283,10 +283,10 @@ const Contact_UA = () => {
                   <p className="text-sm text-gray-600">
                     Воліли б подзвонити? Зв'яжіться з нами за номером{' '}
                     <a 
-                      href="tel:+491764000000" 
+                      href="tel:+4917640099823" 
                       className="text-blue-600 hover:text-blue-700 font-medium transition-colors duration-200"
                     >
-                      +49 176 400 0000
+                      +49 176 400 99823
                     </a>
                   </p>
                 </div>
