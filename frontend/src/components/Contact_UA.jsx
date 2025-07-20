@@ -82,7 +82,7 @@ const Contact_UA = () => {
                 <div className="space-y-4">
                   <div>
                     <p className="font-semibold text-gray-900">GENVEX Team</p>
-                    <p className="text-gray-700">Zamok 20</p>
+                    <p className="text-gray-700">Unterm Heilbrunnen 8</p>
                     <p className="text-gray-700">21029 Гамбург, Німеччина</p>
                   </div>
                   
