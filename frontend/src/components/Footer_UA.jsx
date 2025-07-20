@@ -17,8 +17,9 @@ const Footer_UA = () => {
           <div className="md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
               <img 
-                src="/genvex-logo.svg" 
-                alt="GENVEX Team Logo" 
+                src="https://i.imgur.com/TIvcRlb.png" 
+                className="h-10 w-auto filter brightness-0 invert"
+ 
                 className="h-10 w-auto filter brightness-0 invert"
               />
             </div>
