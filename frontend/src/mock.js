@@ -1,72 +1,72 @@
-// Mock data for GENVEX Team website
+// Mock-Daten für die GENVEX Team Website
 
 export const mockData = {
-  // Company Information
+  // Firmeninformationen
   company: {
     name: "GENVEX Team",
-    location: "Hamburg, Germany",
-    type: "Official Amazon DSP",
-    description: "Hamburg's premier Amazon Delivery Service Partner committed to excellence in delivery services and employee satisfaction."
+    location: "Hamburg, Deutschland",
+    type: "Offizieller Amazon DSP",
+    description: "Hamburgs führender Amazon Delivery Service Partner, der sich der Exzellenz in Lieferdienstleistungen und Mitarbeiterzufriedenheit verschrieben hat."
   },
 
-  // Contact Information
+  // Kontaktinformationen
   contact: {
-    address: "Zamok 20, 21029 Hamburg, Germany",
+    address: "Zamok 20, 21029 Hamburg, Deutschland",
     email: "genvexteam@gmail.com",
     phone: "+49 176 400 0000"
   },
 
-  // FAQ Data
+  // FAQ-Daten
   faqs: [
     {
       id: 1,
-      question: "What are the working hours for delivery drivers?",
-      answer: "Our delivery drivers typically work 8-hour shifts starting around 7:00 AM. We offer full-time positions with approximately 40 hours per week, including some weekend work as needed."
+      question: "Wie sind die Arbeitszeiten für Zustellfahrer?",
+      answer: "Unsere Zustellfahrer arbeiten normalerweise in 8-Stunden-Schichten, die gegen 7:00 Uhr beginnen. Wir bieten Vollzeitstellen mit etwa 40 Stunden pro Woche an, einschließlich einiger Wochenendarbeit nach Bedarf."
     },
     {
       id: 2,
-      question: "Do I need my own vehicle?",
-      answer: "No, you don't need your own vehicle. GENVEX Team provides all delivery vehicles, which are modern, well-maintained vans equipped with GPS and delivery technology."
+      question: "Brauche ich ein eigenes Fahrzeug?",
+      answer: "Nein, Sie benötigen kein eigenes Fahrzeug. GENVEX Team stellt alle Lieferfahrzeuge zur Verfügung, die moderne, gut gewartete Transporter mit GPS und Liefertechnologie sind."
     },
     {
       id: 3,
-      question: "What kind of training do you provide?",
-      answer: "We offer comprehensive paid training covering vehicle operation, delivery procedures, customer service, safety protocols, and use of Amazon's delivery technology. Training typically takes 3-5 days."
+      question: "Welche Schulung bieten Sie an?",
+      answer: "Wir bieten eine umfassende bezahlte Schulung an, die Fahrzeugbedienung, Lieferverfahren, Kundenservice, Sicherheitsprotokolle und die Verwendung von Amazons Liefertechnologie abdeckt. Die Schulung dauert normalerweise 3-5 Tage."
     },
     {
       id: 4,
-      question: "What is the starting salary and are there bonuses?",
-      answer: "Starting salary is €14.50 per hour with opportunities for performance-based bonuses up to €300 monthly. We also offer regular salary reviews and advancement opportunities."
+      question: "Wie hoch ist das Startgehalt und gibt es Boni?",
+      answer: "Das Startgehalt beträgt €15,50 pro Stunde plus €10 netto täglich für Verpflegung. Zusätzlich bieten wir leistungsbasierte Boni bis zu €300 monatlich. Wir führen auch regelmäßige Gehaltsüberprüfungen und Aufstiegsmöglichkeiten durch."
     },
     {
       id: 5,
-      question: "Do you provide uniforms and equipment?",
-      answer: "Yes, we provide uniforms, safety equipment, delivery scanners, and all necessary tools. You'll need to have a smartphone for the delivery app, but we'll guide you through the setup."
+      question: "Stellen Sie Uniformen und Ausrüstung zur Verfügung?",
+      answer: "Ja, wir stellen Uniformen, Sicherheitsausrüstung, Lieferscanner und alle notwendigen Werkzeuge zur Verfügung. Sie benötigen ein Smartphone für die Lieferapp, aber wir führen Sie durch die Einrichtung."
     },
     {
       id: 6,
-      question: "What are the physical requirements?",
-      answer: "Drivers should be able to lift packages up to 23kg, walk for extended periods, and work in various weather conditions. We provide training on proper lifting techniques and safety procedures."
+      question: "Welche körperlichen Anforderungen gibt es?",
+      answer: "Fahrer sollten in der Lage sein, Pakete bis zu 23 kg zu heben, längere Zeit zu gehen und bei verschiedenen Wetterbedingungen zu arbeiten. Wir bieten Schulungen zu ordnungsgemäßen Hebetechniken und Sicherheitsverfahren."
     },
     {
       id: 7,
-      question: "How do I apply and what's the hiring process?",
-      answer: "Submit your application through our contact form or email. The process includes application review, phone interview, in-person interview, background check, and drug screening. The entire process typically takes 1-2 weeks."
+      question: "Wie bewerbe ich mich und wie läuft der Einstellungsprozess ab?",
+      answer: "Reichen Sie Ihre Bewerbung über unser Kontaktformular oder per E-Mail ein. Der Prozess umfasst Bewerbungsüberprüfung, Telefoninterview, persönliches Interview, Hintergrundüberprüfung und Drogentest. Der gesamte Prozess dauert normalerweise 1-2 Wochen."
     },
     {
       id: 8,
-      question: "Do you offer benefits and career advancement?",
-      answer: "We offer various benefits including health insurance options, paid time off, and employee discounts. There are opportunities to advance to driver trainer, dispatcher, or management roles within our growing network."
+      question: "Bieten Sie Vorteile und Karriereentwicklung an?",
+      answer: "Wir bieten verschiedene Vorteile, einschließlich Krankenversicherungsoptionen, bezahlter Freizeit und Mitarbeiterrabatten. Es gibt Möglichkeiten, zum Fahrtrainer, Dispatcher oder zu Führungsrollen in unserem wachsenden Netzwerk aufzusteigen."
     }
   ],
 
-  // Application Data (for mock form submissions)
+  // Bewerbungsdaten (für Mock-Formulareinreichungen)
   applications: []
 };
 
-// Mock API functions
+// Mock-API-Funktionen
 export const mockAPI = {
-  // Submit application
+  // Bewerbung einreichen
   submitApplication: async (applicationData) => {
     return new Promise((resolve) => {
       setTimeout(() => {
@@ -79,14 +79,14 @@ export const mockAPI = {
         mockData.applications.push(application);
         resolve({
           success: true,
-          message: "Application submitted successfully! We'll contact you within 2-3 business days.",
+          message: "Bewerbung erfolgreich eingereicht! Wir werden Sie innerhalb von 2-3 Werktagen kontaktieren.",
           applicationId: application.id
         });
       }, 1000);
     });
   },
 
-  // Get FAQ data
+  // FAQ-Daten abrufen
   getFAQs: async () => {
     return new Promise((resolve) => {
       setTimeout(() => {
@@ -98,13 +98,13 @@ export const mockAPI = {
     });
   },
 
-  // Contact form submission
+  // Kontaktformular einreichen
   submitContact: async (contactData) => {
     return new Promise((resolve) => {
       setTimeout(() => {
         resolve({
           success: true,
-          message: "Thank you for your message! We'll get back to you within 24 hours."
+          message: "Vielen Dank für Ihre Nachricht! Wir werden Ihnen innerhalb von 24 Stunden antworten."
         });
       }, 800);
     });

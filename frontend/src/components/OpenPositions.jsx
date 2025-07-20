@@ -1,5 +1,5 @@
 import React from 'react';
-import { Clock, MapPin, Euro, Users, GraduationCap, ArrowRight, CheckCircle } from 'lucide-react';
+import { Clock, MapPin, Euro, Users, GraduationCap, ArrowRight, CheckCircle, UtensilsCrossed } from 'lucide-react';
 import { Button } from './ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
 import { Badge } from './ui/badge';
@@ -13,23 +13,24 @@ const OpenPositions = () => {
   };
 
   const requirements = [
-    "Class B driver's license (or willingness to obtain)",
-    "Reliable and punctual work ethic",
-    "Physical fitness for package handling",
-    "Basic German or English communication skills",
-    "Clean driving record",
-    "Smartphone for delivery app usage"
+    "Führerschein Klasse B (oder Bereitschaft zum Erwerb)",
+    "Zuverlässigkeit und Pünktlichkeit",
+    "Körperliche Fitness für Pakethandling",
+    "Grundkenntnisse in Deutsch oder Englisch",
+    "Saubere Fahrtenschreibung",
+    "Smartphone für Lieferapp-Nutzung"
   ];
 
   const offerings = [
-    "Competitive salary starting at €14.50/hour",
-    "Performance-based monthly bonuses up to €300",
-    "Comprehensive paid training program",
-    "Full-time position with 40 hours/week",
-    "Modern delivery vehicles provided",
-    "Supportive team environment and mentorship",
-    "Opportunity for advancement within Amazon network",
-    "Employee benefits and insurance options"
+    "Attraktives Gehalt von €15,50/Stunde",
+    "Zusätzlich €10 netto täglich für Verpflegung",
+    "Leistungsbasierte monatliche Boni bis zu €300",
+    "Umfassende bezahlte Schulungsprogramme",
+    "Vollzeitstelle mit 40 Stunden/Woche",
+    "Moderne Lieferfahrzeuge gestellt",
+    "Unterstützendes Teamumfeld und Mentoring",
+    "Aufstiegsmöglichkeiten im Amazon-Netzwerk",
+    "Mitarbeitervorteile und Versicherungsoptionen"
   ];
 
   return (
@@ -38,14 +39,14 @@ const OpenPositions = () => {
         {/* Header */}
         <div className="text-center mb-12">
           <Badge className="bg-blue-100 text-blue-800 px-4 py-2 mb-4">
-            NOW HIRING
+            WIR STELLEN EIN
           </Badge>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Open Positions
+            Offene Stellen
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Join our growing team of professional delivery drivers in Hamburg. 
-            We're looking for dedicated individuals ready to build a career with us.
+            Werden Sie Teil unseres wachsenden Teams professioneller Lieferfahrer in Hamburg. 
+            Wir suchen engagierte Personen, die bereit sind, eine Karriere mit uns aufzubauen.
           </p>
         </div>
 
@@ -55,25 +56,29 @@ const OpenPositions = () => {
             <div className="flex flex-col md:flex-row justify-between items-start md:items-center">
               <div>
                 <CardTitle className="text-2xl md:text-3xl text-gray-900 mb-2">
-                  Delivery Driver (Full-time)
+                  Zustellfahrer (Vollzeit)
                 </CardTitle>
                 <div className="flex flex-wrap gap-4 text-sm text-gray-600">
                   <div className="flex items-center">
                     <MapPin className="h-4 w-4 mr-1 text-blue-600" />
-                    Hamburg, Germany
+                    Hamburg, Deutschland
                   </div>
                   <div className="flex items-center">
                     <Clock className="h-4 w-4 mr-1 text-blue-600" />
-                    Full-time, 40 hours/week
+                    Vollzeit, 40 Stunden/Woche
                   </div>
                   <div className="flex items-center">
                     <Euro className="h-4 w-4 mr-1 text-blue-600" />
-                    From €14.50/hour + bonuses
+                    €15,50/Stunde + €10 täglich
+                  </div>
+                  <div className="flex items-center">
+                    <UtensilsCrossed className="h-4 w-4 mr-1 text-blue-600" />
+                    Verpflegungsgeld netto
                   </div>
                 </div>
               </div>
               <Badge className="bg-green-100 text-green-800 mt-4 md:mt-0">
-                Multiple Positions Available
+                Mehrere Positionen verfügbar
               </Badge>
             </div>
           </CardHeader>
@@ -83,7 +88,7 @@ const OpenPositions = () => {
               <div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-4 flex items-center">
                   <GraduationCap className="h-5 w-5 mr-2 text-blue-600" />
-                  Requirements
+                  Anforderungen
                 </h3>
                 <div className="space-y-3">
                   {requirements.map((req, index) => (
@@ -99,7 +104,7 @@ const OpenPositions = () => {
               <div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-4 flex items-center">
                   <Users className="h-5 w-5 mr-2 text-blue-600" />
-                  What We Offer
+                  Was wir bieten
                 </h3>
                 <div className="space-y-3">
                   {offerings.map((offer, index) => (
@@ -112,29 +117,50 @@ const OpenPositions = () => {
               </div>
             </div>
 
+            {/* Salary Highlight */}
+            <div className="mt-8 p-6 bg-gradient-to-r from-green-50 to-blue-50 rounded-lg border border-green-200">
+              <h4 className="text-lg font-semibold text-gray-900 mb-3 flex items-center">
+                <Euro className="h-5 w-5 mr-2 text-green-600" />
+                Attraktive Vergütung
+              </h4>
+              <div className="grid md:grid-cols-2 gap-4">
+                <div>
+                  <p className="text-gray-700 font-medium">Stundenlohn: €15,50</p>
+                  <p className="text-sm text-gray-600">Bei 40 Std/Woche = €2.480/Monat</p>
+                </div>
+                <div>
+                  <p className="text-gray-700 font-medium">Verpflegungsgeld: €10 netto täglich</p>
+                  <p className="text-sm text-gray-600">Zusätzlich €200-220/Monat</p>
+                </div>
+              </div>
+              <p className="text-sm text-blue-700 mt-3 font-medium">
+                Gesamtvergütung: Über €2.700/Monat + Leistungsboni
+              </p>
+            </div>
+
             {/* Job Description */}
             <div className="mt-8 pt-8 border-t border-gray-200">
               <h3 className="text-xl font-semibold text-gray-900 mb-4">
-                About the Role
+                Über die Position
               </h3>
               <p className="text-gray-700 mb-6 leading-relaxed">
-                As a Delivery Driver with GENVEX Team, you'll be the face of Amazon in Hamburg, 
-                ensuring customers receive their packages safely and on time. You'll work with 
-                cutting-edge delivery technology, drive modern vehicles, and be part of a 
-                supportive team that values your contributions. This is more than just a job – 
-                it's an opportunity to build a career in the growing logistics industry.
+                Als Zustellfahrer im GENVEX Team werden Sie das Gesicht von Amazon in Hamburg und sorgen dafür, 
+                dass Kunden ihre Pakete sicher und pünktlich erhalten. Sie arbeiten mit modernster Liefertechnologie, 
+                fahren moderne Fahrzeuge und sind Teil eines unterstützenden Teams, das Ihre Beiträge schätzt. 
+                Das ist mehr als nur ein Job – es ist eine Gelegenheit, eine Karriere in der wachsenden Logistikbranche aufzubauen.
               </p>
               
               <div className="bg-blue-50 rounded-lg p-6">
                 <h4 className="text-lg font-semibold text-gray-900 mb-3">
-                  Why This Role is Perfect For You:
+                  Warum diese Position perfekt für Sie ist:
                 </h4>
                 <ul className="text-gray-700 space-y-2">
-                  <li>• Work independently while being part of a supportive team</li>
-                  <li>• Stay active and engaged throughout your workday</li>
-                  <li>• Interact with customers and make a positive impact in the community</li>
-                  <li>• Develop skills in logistics, customer service, and technology</li>
-                  <li>• Build towards supervisory and management opportunities</li>
+                  <li>• Selbstständig arbeiten und trotzdem Teil eines unterstützenden Teams sein</li>
+                  <li>• Aktiv bleiben und während des Arbeitstages engagiert sein</li>
+                  <li>• Mit Kunden interagieren und einen positiven Einfluss in der Gemeinschaft haben</li>
+                  <li>• Fähigkeiten in Logistik, Kundenservice und Technologie entwickeln</li>
+                  <li>• Aufbau in Richtung Führungs- und Managementmöglichkeiten</li>
+                  <li>• Starker Teamzusammenhalt und immer verfügbare Unterstützung</li>
                 </ul>
               </div>
             </div>
@@ -142,10 +168,10 @@ const OpenPositions = () => {
             {/* CTA Section */}
             <div className="mt-8 pt-8 border-t border-gray-200 text-center">
               <h3 className="text-xl font-semibold text-gray-900 mb-4">
-                Ready to Start Your Journey?
+                Bereit, Ihre Reise zu starten?
               </h3>
               <p className="text-gray-600 mb-6">
-                Join GENVEX Team today and become part of Hamburg's most trusted delivery service.
+                Werden Sie noch heute Teil des GENVEX Teams und werden Sie Teil von Hamburgs vertrauensvollstem Lieferservice.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button 
@@ -153,7 +179,7 @@ const OpenPositions = () => {
                   size="lg"
                   className="bg-blue-600 hover:bg-blue-700 text-white px-8 transition-colors duration-200"
                 >
-                  Submit Application
+                  Bewerbung einreichen
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
                 <Button 
@@ -162,7 +188,7 @@ const OpenPositions = () => {
                   size="lg"
                   className="border-blue-600 text-blue-600 hover:bg-blue-50 px-8 transition-colors duration-200"
                 >
-                  Learn About Life at GENVEX
+                  Leben bei GENVEX erfahren
                 </Button>
               </div>
             </div>
@@ -172,14 +198,14 @@ const OpenPositions = () => {
         {/* Additional Info */}
         <div className="text-center">
           <p className="text-gray-600 mb-4">
-            Questions about the application process?
+            Fragen zum Bewerbungsprozess?
           </p>
           <Button 
             onClick={() => scrollToSection('faq')}
             variant="outline"
             className="border-blue-600 text-blue-600 hover:bg-blue-50 transition-colors duration-200"
           >
-            Check Our FAQ Section
+            Schauen Sie in unseren FAQ-Bereich
           </Button>
         </div>
       </div>

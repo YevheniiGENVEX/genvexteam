@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Menu, X, Truck } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { Button } from './ui/button';
 
 const Header = () => {
@@ -32,19 +32,19 @@ const Header = () => {
               onClick={() => scrollToSection('home')}
               className="text-gray-700 hover:text-blue-600 transition-colors duration-200 font-medium"
             >
-              Home
+              Startseite
             </button>
             <button
               onClick={() => scrollToSection('positions')}
               className="text-gray-700 hover:text-blue-600 transition-colors duration-200 font-medium"
             >
-              Open Positions
+              Stellenangebote
             </button>
             <button
               onClick={() => scrollToSection('life')}
               className="text-gray-700 hover:text-blue-600 transition-colors duration-200 font-medium"
             >
-              Life at GENVEX
+              Leben bei GENVEX
             </button>
             <button
               onClick={() => scrollToSection('faq')}
@@ -56,7 +56,7 @@ const Header = () => {
               onClick={() => scrollToSection('contact')}
               className="text-gray-700 hover:text-blue-600 transition-colors duration-200 font-medium"
             >
-              Contact
+              Kontakt
             </button>
           </nav>
 
@@ -65,7 +65,7 @@ const Header = () => {
             onClick={() => scrollToSection('contact')}
             className="hidden md:block bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 transition-colors duration-200"
           >
-            Apply Now
+            Jetzt bewerben
           </Button>
 
           {/* Mobile menu button */}
@@ -85,19 +85,19 @@ const Header = () => {
                 onClick={() => scrollToSection('home')}
                 className="text-gray-700 hover:text-blue-600 transition-colors duration-200 font-medium text-left"
               >
-                Home
+                Startseite
               </button>
               <button
                 onClick={() => scrollToSection('positions')}
                 className="text-gray-700 hover:text-blue-600 transition-colors duration-200 font-medium text-left"
               >
-                Open Positions
+                Stellenangebote
               </button>
               <button
                 onClick={() => scrollToSection('life')}
                 className="text-gray-700 hover:text-blue-600 transition-colors duration-200 font-medium text-left"
               >
-                Life at GENVEX
+                Leben bei GENVEX
               </button>
               <button
                 onClick={() => scrollToSection('faq')}
@@ -109,13 +109,13 @@ const Header = () => {
                 onClick={() => scrollToSection('contact')}
                 className="text-gray-700 hover:text-blue-600 transition-colors duration-200 font-medium text-left"
               >
-                Contact
+                Kontakt
               </button>
               <Button 
                 onClick={() => scrollToSection('contact')}
                 className="bg-blue-600 hover:bg-blue-700 text-white w-full mt-4 transition-colors duration-200"
               >
-                Apply Now
+                Jetzt bewerben
               </Button>
             </div>
           </div>
