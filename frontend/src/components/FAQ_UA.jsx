@@ -137,7 +137,7 @@ const FAQ_UA = () => {
         {/* Quick Contact Info */}
         <div className="mt-8 text-center text-sm text-gray-600">
           <p>
-            <strong>Телефон:</strong> +49 176 400 0000 | 
+            <strong>Телефон:</strong> +49 176 400 99823 | 
             <strong className="ml-2">Електронна пошта:</strong> genvexteam@gmail.com
           </p>
         </div>

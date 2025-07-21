@@ -112,7 +112,7 @@ const Homepage_UA = () => {
                 </div>
                 <div className="flex items-start space-x-3">
                   <CheckCircle className="h-6 w-6 text-blue-600 mt-1 flex-shrink-0" />
-                  <p className="text-gray-700">Конкурентна оплата з премією за результативність</p>
+                  <p className="text-gray-700">Конкурентна оплата: €15,50/година + €10 щодня на харчування (нетто)</p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <CheckCircle className="h-6 w-6 text-blue-600 mt-1 flex-shrink-0" />
@@ -124,7 +124,11 @@ const Homepage_UA = () => {
                 </div>
                 <div className="flex items-start space-x-3">
                   <CheckCircle className="h-6 w-6 text-blue-600 mt-1 flex-shrink-0" />
-                  <p className="text-gray-700">Підтримуюче командне середовище в Гамбурзі</p>
+                  <p className="text-gray-700">Підтримуюче командне середовище в Гамбурзі з міцною згуртованістю</p>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <CheckCircle className="h-6 w-6 text-blue-600 mt-1 flex-shrink-0" />
+                  <p className="text-gray-700">Цілодобова підтримка диспетчера та прямий зв'язок з командою</p>
                 </div>
               </div>
               <Button 

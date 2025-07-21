@@ -82,13 +82,13 @@ const Contact_UA = () => {
                 <div className="space-y-4">
                   <div>
                     <p className="font-semibold text-gray-900">GENVEX Team</p>
-                    <p className="text-gray-700">Zamok 20</p>
+                    <p className="text-gray-700">Unterm Heilbrunnen 8</p>
                     <p className="text-gray-700">21029 Гамбург, Німеччина</p>
                   </div>
                   
                   <div className="flex items-center space-x-2">
                     <Clock className="h-4 w-4 text-blue-600" />
-                    <span className="text-sm text-gray-600">Пн-Пт: 7:00 - 18:00</span>
+                    <span className="text-sm text-gray-600">Пн-Сб: 8:00 - 22:00</span>
                   </div>
                   
                   <div className="pt-4 border-t border-gray-200">
@@ -111,10 +111,10 @@ const Contact_UA = () => {
                     <div>
                       <p className="font-medium text-gray-900">Телефон</p>
                       <a 
-                        href="tel:+491764000000" 
+                        href="tel:+4917640099823" 
                         className="text-blue-600 hover:text-blue-700 transition-colors duration-200"
                       >
-                        +49 176 400 0000
+                        +49 176 400 99823
                       </a>
                     </div>
                   </div>
@@ -283,10 +283,10 @@ const Contact_UA = () => {
                   <p className="text-sm text-gray-600">
                     Воліли б подзвонити? Зв'яжіться з нами за номером{' '}
                     <a 
-                      href="tel:+491764000000" 
+                      href="tel:+4917640099823" 
                       className="text-blue-600 hover:text-blue-700 font-medium transition-colors duration-200"
                     >
-                      +49 176 400 0000
+                      +49 176 400 99823
                     </a>
                   </p>
                 </div>

@@ -119,15 +119,15 @@ const FAQ = () => {
                   className="bg-blue-600 hover:bg-blue-700 text-white transition-colors duration-200"
                   size="lg"
                 >
-                  Contact Us Now
+                  Kontaktieren Sie uns jetzt
                 </Button>
                 <Button 
-                  onClick={() => window.open(`mailto:genvexteam@gmail.com?subject=Question about Delivery Driver Position`, '_blank')}
+                  onClick={() => window.open(`mailto:genvexteam@gmail.com?subject=Frage zur Zustellfahrer-Position`, '_blank')}
                   variant="outline"
                   className="border-blue-600 text-blue-600 hover:bg-white transition-colors duration-200"
                   size="lg"
                 >
-                  Email Us Directly
+                  Direkt E-Mail senden
                 </Button>
               </div>
             </CardContent>
@@ -137,8 +137,8 @@ const FAQ = () => {
         {/* Quick Contact Info */}
         <div className="mt-8 text-center text-sm text-gray-600">
           <p>
-            <strong>Phone:</strong> +49 176 400 0000 | 
-            <strong className="ml-2">Email:</strong> genvexteam@gmail.com
+            <strong>Telefon:</strong> +49 176 400 99823 | 
+            <strong className="ml-2">E-Mail:</strong> genvexteam@gmail.com
           </p>
         </div>
       </div>
