@@ -17,7 +17,7 @@ const Footer_UA = () => {
           <div className="md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
               <img 
-                src="/genvex-logo.svg" 
+                src="https://i.imgur.com/TIvcRlb.png" 
                 alt="GENVEX Team Logo" 
                 className="h-10 w-auto filter brightness-0 invert"
               />
@@ -85,7 +85,7 @@ const Footer_UA = () => {
               <div className="flex items-start space-x-2">
                 <MapPin className="h-4 w-4 text-blue-400 mt-0.5 flex-shrink-0" />
                 <div>
-                  <p className="text-gray-300">Zamok 20</p>
+                  <p className="text-gray-300">Unterm Heilbrunnen 8</p>
                   <p className="text-gray-300">21029 Гамбург, Німеччина</p>
                 </div>
               </div>
@@ -93,10 +93,10 @@ const Footer_UA = () => {
               <div className="flex items-center space-x-2">
                 <Phone className="h-4 w-4 text-blue-400 flex-shrink-0" />
                 <a 
-                  href="tel:+491764000000"
+                  href="tel:+4917640099823"
                   className="text-gray-300 hover:text-blue-400 transition-colors duration-200"
                 >
-                  +49 176 400 0000
+                  +49 176 400 99823
                 </a>
               </div>
               
@@ -112,7 +112,7 @@ const Footer_UA = () => {
 
               <div className="flex items-center space-x-2 pt-2">
                 <Clock className="h-4 w-4 text-blue-400 flex-shrink-0" />
-                <span className="text-gray-300">Пн-Пт: 7:00 - 18:00</span>
+                <span className="text-gray-300">Пн-Сб: 8:00 - 22:00</span>
               </div>
             </div>
           </div>

@@ -20,7 +20,7 @@ const Header_UA = () => {
           {/* Logo */}
           <div className="flex items-center space-x-2">
             <img 
-              src="/genvex-logo.svg" 
+              src="https://i.imgur.com/TIvcRlb.png" 
               alt="GENVEX Team Logo" 
               className="h-12 w-auto"
             />

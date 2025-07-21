@@ -33,13 +33,10 @@ const LifeAtGenvex_UA = () => {
   ];
 
   const dailySchedule = [
-    { time: "6:30", activity: "Прибуття до депо, перевірка безпеки", icon: Coffee },
-    { time: "7:00", activity: "Командний брифінг та планування маршруту", icon: Users },
-    { time: "7:30", activity: "Огляд транспорту та завантаження", icon: Truck },
-    { time: "8:00", activity: "Початок маршруту доставки", icon: MapPin },
-    { time: "14:00", activity: "Обідня перерва та перевірка транспорту", icon: Coffee },
-    { time: "14:30", activity: "Денні доставки", icon: MapPin },
-    { time: "17:30", activity: "Повернення до депо, завершальні процедури", icon: Award }
+    { time: "10:30", activity: "Прибуття до депо", icon: Coffee },
+    { time: "10:50", activity: "Завантаження підготовленого маршруту", icon: Truck },
+    { time: "11:00", activity: "Відправлення на доставку", icon: MapPin },
+    { time: "18:00", activity: "Повернення до депо, завершальні процедури", icon: Award }
   ];
 
   return (
@@ -174,7 +171,7 @@ const LifeAtGenvex_UA = () => {
         )}
 
         {/* Culture Highlights */}
-        <div className="mt-16 grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="mt-16 grid md:grid-cols-3 gap-6">
           <Card className="text-center p-6 border-0 shadow-lg hover:shadow-xl transition-shadow duration-300">
             <CardContent className="pt-6">
               <div className="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3">
@@ -182,16 +179,6 @@ const LifeAtGenvex_UA = () => {
               </div>
               <h3 className="font-semibold text-gray-900 mb-2">Командний дух</h3>
               <p className="text-sm text-gray-600">Міцні зв'язки та взаємна підтримка</p>
-            </CardContent>
-          </Card>
-
-          <Card className="text-center p-6 border-0 shadow-lg hover:shadow-xl transition-shadow duration-300">
-            <CardContent className="pt-6">
-              <div className="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3">
-                <Award className="h-6 w-6 text-blue-600" />
-              </div>
-              <h3 className="font-semibold text-gray-900 mb-2">Визнання</h3>
-              <p className="text-sm text-gray-600">Регулярна оцінка та винагороди</p>
             </CardContent>
           </Card>
 

@@ -2,7 +2,7 @@ import React from "react";
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-// German/English version components
+// German version components
 import Header from "./components/Header";
 import Homepage from "./components/Homepage";
 import OpenPositions from "./components/OpenPositions";
@@ -26,14 +26,14 @@ const LanguageSwitcher = ({ currentLang, onLanguageChange }) => {
     <div className="fixed top-20 right-4 z-40 bg-white shadow-lg rounded-lg p-2 border">
       <div className="flex gap-2">
         <button
-          onClick={() => onLanguageChange('en')}
+          onClick={() => onLanguageChange('de')}
           className={`px-3 py-1 rounded text-sm font-medium transition-colors duration-200 ${
-            currentLang === 'en'
+            currentLang === 'de'
               ? 'bg-blue-600 text-white'
               : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
           }`}
         >
-          DE/EN
+          DE
         </button>
         <button
           onClick={() => onLanguageChange('ua')}
@@ -50,10 +50,10 @@ const LanguageSwitcher = ({ currentLang, onLanguageChange }) => {
   );
 };
 
-// German/English version
+// German version
 const GermanVersion = ({ onLanguageChange }) => (
   <>
-    <LanguageSwitcher currentLang="en" onLanguageChange={onLanguageChange} />
+    <LanguageSwitcher currentLang="de" onLanguageChange={onLanguageChange} />
     <Header />
     <main>
       <Homepage />
@@ -83,7 +83,7 @@ const UkrainianVersion = ({ onLanguageChange }) => (
 );
 
 function App() {
-  const [language, setLanguage] = React.useState('en');
+  const [language, setLanguage] = React.useState('de');
 
   const handleLanguageChange = (newLang) => {
     setLanguage(newLang);
