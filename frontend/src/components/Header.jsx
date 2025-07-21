@@ -20,10 +20,10 @@ const Header = () => {
           {/* Logo */}
           <div className="flex items-center space-x-2">
             <img 
-              src="https://i.imgur.com/TIvcRlb.png"/>
-            alt="GENVEX Team Logo" 
-            className="h-12 w-auto"
-          />
+              src="https://i.imgur.com/TIvcRlb.png" 
+              alt="GENVEX Team Logo" 
+              className="h-12 w-auto"
+            />
           </div>
 
           {/* Desktop Navigation */}
