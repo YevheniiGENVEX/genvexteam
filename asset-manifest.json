@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/genvexteam/static/css/main.5df1e527.css",
+    "main.js": "/genvexteam/static/js/main.2f182b15.js",
+    "index.html": "/genvexteam/index.html",
+    "main.5df1e527.css.map": "/genvexteam/static/css/main.5df1e527.css.map",
+    "main.2f182b15.js.map": "/genvexteam/static/js/main.2f182b15.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5df1e527.css",
+    "static/js/main.2f182b15.js"
+  ]
+}
