@@ -17,7 +17,7 @@ const Homepage = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
         <div className="text-center">
           <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
-            Werde Teil des GENVEX Teams –{' '}
+            Werde Teil des GENVEX Team –{' '}
             <span className="text-blue-600">Erfolg liefern</span> mit Amazon
           </h1>
           <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto">
