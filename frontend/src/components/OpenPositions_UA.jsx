@@ -66,11 +66,11 @@ const OpenPositions_UA = () => {
                   </div>
                   <div className="flex items-center">
                     <Euro className="h-4 w-4 mr-1 text-blue-600" />
-                    Від €15,50/година + €10 щодня
+                    Від €15,50/година
                   </div>
                   <div className="flex items-center">
                     <UtensilsCrossed className="h-4 w-4 mr-1 text-blue-600" />
-                    Харчові нетто
+                    Харчові нетто €10 щодня
                   </div>
                 </div>
               </div>
