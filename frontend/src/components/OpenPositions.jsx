@@ -13,11 +13,9 @@ const OpenPositions = () => {
   };
 
   const requirements = [
-    "Führerschein Klasse B (oder Bereitschaft zum Erwerb)",
+    "Führerschein Klasse B",
     "Zuverlässigkeit und Pünktlichkeit",
-    "Körperliche Fitness für Pakethandling (90% der Pakete wiegen max. 5kg)",
-    "Grundkenntnisse in Deutsch oder Englisch",
-    "Saubere Fahrtenschreibung"
+    "Grundkenntnisse in Deutsch oder Englisch"
   ];
 
   const offerings = [
