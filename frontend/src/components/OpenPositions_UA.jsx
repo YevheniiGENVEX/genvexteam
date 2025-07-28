@@ -36,7 +36,7 @@ const OpenPositions_UA = () => {
         {/* Header */}
         <div className="text-center mb-12">
           <Badge className="bg-blue-100 text-blue-800 px-4 py-2 mb-4">
-            Команда сформована, слідкуйте за оновленнями
+            ❌ Команда сформована, слідкуйте за оновленнями
           </Badge>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
             Відкриті вакансії
