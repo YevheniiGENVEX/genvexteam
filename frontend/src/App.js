@@ -27,22 +27,24 @@ const LanguageSwitcher = ({ currentLang, onLanguageChange }) => {
       <div className="flex gap-2">
         <button
           onClick={() => onLanguageChange('de')}
-          className={`px-3 py-1 rounded text-sm font-medium transition-colors duration-200 ${
+          className={`px-3 py-1 rounded text-sm font-medium transition-colors duration-200 flex items-center gap-1 ${
             currentLang === 'de'
               ? 'bg-blue-600 text-white'
               : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
           }`}
         >
+          <span className="text-base">🇩🇪</span>
           DE
         </button>
         <button
           onClick={() => onLanguageChange('ua')}
-          className={`px-3 py-1 rounded text-sm font-medium transition-colors duration-200 ${
+          className={`px-3 py-1 rounded text-sm font-medium transition-colors duration-200 flex items-center gap-1 ${
             currentLang === 'ua'
               ? 'bg-blue-600 text-white'
               : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
           }`}
         >
+          <span className="text-base">🇺🇦</span>
           УКР
         </button>
       </div>
