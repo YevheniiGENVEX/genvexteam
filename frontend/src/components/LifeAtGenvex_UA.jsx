@@ -18,17 +18,17 @@ const LifeAtGenvex_UA = () => {
     {
       title: "Наш автопарк доставки",
       description: "Сучасні, добре обслуговувані транспортні засоби, оснащені найновішими технологіями доставки",
-      image: "https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?w=400&h=300&fit=crop"
+      image: "https://i.imgur.com/BoQ9lWO.jpeg"
     },
     {
-      title: "Командна нарада",
-      description: "Щоденні брифінги забезпечують готовність та підтримку кожного",
+      title: "Робоче місце",
+      description: "Організоване та ефективне сортування та завантаження посилок",
       image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=300&fit=crop"
     },
     {
       title: "Станція завантаження",
       description: "Організований та ефективний процес сортування та завантаження посилок",
-      image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=400&h=300&fit=crop"
+      image: "https://i.imgur.com/pMREY0z.jpeg"
     }
   ];
 
