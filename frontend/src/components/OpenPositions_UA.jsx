@@ -68,6 +68,10 @@ const OpenPositions_UA = () => {
                     <Euro className="h-4 w-4 mr-1 text-blue-600" />
                     Від €15,50/година + €10 щодня
                   </div>
+                  <div className="flex items-center">
+                    <UtensilsCrossed className="h-4 w-4 mr-1 text-blue-600" />
+                    Харчові нетто
+                  </div>
                 </div>
               </div>
               <Badge className="bg-green-100 text-green-800 mt-4 md:mt-0">
