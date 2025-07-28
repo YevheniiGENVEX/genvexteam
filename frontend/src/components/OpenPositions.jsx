@@ -36,7 +36,7 @@ const OpenPositions = () => {
         {/* Header */}
         <div className="text-center mb-12">
           <Badge className="bg-blue-100 text-blue-800 px-4 py-2 mb-4">
-            Team ist vollständig, folgen Sie für Updates
+            Das Team ist vollständig. Folgen Sie uns für Neuigkeiten
           </Badge>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
             Offene Stellen
