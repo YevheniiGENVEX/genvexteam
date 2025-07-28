@@ -114,27 +114,6 @@ const OpenPositions = () => {
               </div>
             </div>
 
-            {/* Salary Highlight */}
-            <div className="mt-8 p-6 bg-gradient-to-r from-green-50 to-blue-50 rounded-lg border border-green-200">
-              <h4 className="text-lg font-semibold text-gray-900 mb-3 flex items-center">
-                <Euro className="h-5 w-5 mr-2 text-green-600" />
-                Attraktive Vergütung
-              </h4>
-              <div className="grid md:grid-cols-2 gap-4">
-                <div>
-                  <p className="text-gray-700 font-medium">Stundenlohn: €15,50</p>
-                  <p className="text-sm text-gray-600">Bei 40 Std/Woche = €2.480/Monat</p>
-                </div>
-                <div>
-                  <p className="text-gray-700 font-medium">Verpflegungsgeld: €10 netto täglich</p>
-                  <p className="text-sm text-gray-600">Zusätzlich €200-220/Monat</p>
-                </div>
-              </div>
-              <p className="text-sm text-blue-700 mt-3 font-medium">
-                Gesamtvergütung: Über €2.700/Monat
-              </p>
-            </div>
-
             {/* Job Description */}
             <div className="mt-8 pt-8 border-t border-gray-200">
               <h3 className="text-xl font-semibold text-gray-900 mb-4">
