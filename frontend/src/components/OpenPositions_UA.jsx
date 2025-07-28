@@ -1,5 +1,5 @@
 import React from 'react';
-import { Clock, MapPin, Euro, Users, GraduationCap, ArrowRight, CheckCircle } from 'lucide-react';
+import { Clock, MapPin, Euro, Users, GraduationCap, ArrowRight, CheckCircle, UtensilsCrossed } from 'lucide-react';
 import { Button } from './ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
 import { Badge } from './ui/badge';
