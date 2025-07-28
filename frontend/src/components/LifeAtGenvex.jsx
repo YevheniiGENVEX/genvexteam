@@ -120,7 +120,6 @@ const LifeAtGenvex = () => {
                     <li>• <strong>Flexibilität:</strong> Routen sind effizient geplant, um Stress zu minimieren</li>
                     <li>• <strong>Unterstützung:</strong> Immer verbunden mit unserem Dispatch-Team für Hilfe</li>
                     <li>• <strong>Technologie:</strong> Erweiterte GPS- und Lieferungs-Apps machen die Navigation einfach</li>
-                    <li>• <strong>Gemeinschaft:</strong> Aufbau von Beziehungen zu Stammkunden</li>
                     <li>• <strong>Erfolg:</strong> Sehen Sie jeden Tag die direkte Auswirkung Ihrer Arbeit</li>
                   </ul>
                 </div>
