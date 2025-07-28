@@ -66,11 +66,11 @@ const OpenPositions = () => {
                   </div>
                   <div className="flex items-center">
                     <Euro className="h-4 w-4 mr-1 text-blue-600" />
-                    €15,50/Stunde + €10 täglich
+                    €15,50/Stunde
                   </div>
                   <div className="flex items-center">
                     <UtensilsCrossed className="h-4 w-4 mr-1 text-blue-600" />
-                    Verpflegungsgeld netto
+                    Verpflegungsgeld netto €10 täglich
                   </div>
                 </div>
               </div>
