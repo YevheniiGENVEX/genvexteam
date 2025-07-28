@@ -75,7 +75,7 @@ const OpenPositions = () => {
                 </div>
               </div>
               <Badge className="bg-green-100 text-green-800 mt-4 md:mt-0">
-                Mehrere Positionen verfügbar
+                Wir warten auf Ihre Bewerbung
               </Badge>
             </div>
           </CardHeader>
