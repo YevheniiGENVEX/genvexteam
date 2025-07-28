@@ -135,8 +135,7 @@ const LifeAtGenvex_UA = () => {
             <div className="grid md:grid-cols-3 gap-6">
               {teamPhotos.map((photo, index) => (
                 <Card key={index} className="shadow-lg border-0 overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                  <div className="h-48 bg-gradient-to-br from-blue-100 to-blue-50 flex items-center justify-center">
-                    <Truck className="h-16 w-16 text-blue-600" />
+                  <div className="h-48 bg-cover bg-center" style={{ backgroundImage: `url(${photo.image})` }}>
                   </div>
                   <CardContent className="p-6">
                     <h3 className="text-lg font-semibold text-gray-900 mb-2">
