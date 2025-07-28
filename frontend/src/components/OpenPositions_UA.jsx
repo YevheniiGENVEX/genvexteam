@@ -75,7 +75,7 @@ const OpenPositions_UA = () => {
                 </div>
               </div>
               <Badge className="bg-green-100 text-green-800 mt-4 md:mt-0">
-                Доступно декілька позицій
+                Чекаємо вашої заявки
               </Badge>
             </div>
           </CardHeader>
