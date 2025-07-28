@@ -58,7 +58,7 @@ const Homepage_UA = () => {
         </div>
 
         {/* Values Cards */}
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-4 gap-6">
           <Card className="text-center p-6 border-0 shadow-lg hover:shadow-xl transition-shadow duration-300">
             <CardContent className="pt-6">
               <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -76,7 +76,7 @@ const Homepage_UA = () => {
               <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Users className="h-8 w-8 text-blue-600" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">Командна робота</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Командний дух</h3>
               <p className="text-gray-600">
                 Міцна співпраця та взаємна підтримка створюють позитивне робоче середовище, де кожен досягає успіху разом.
               </p>
@@ -86,11 +86,23 @@ const Homepage_UA = () => {
           <Card className="text-center p-6 border-0 shadow-lg hover:shadow-xl transition-shadow duration-300">
             <CardContent className="pt-6">
               <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <TrendingUp className="h-8 w-8 text-blue-600" />
+                <MessageCircle className="h-8 w-8 text-blue-600" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">Розвиток</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Завжди на зв'язку</h3>
               <p className="text-gray-600">
-                Постійні можливості для особистого та професійного розвитку в рамках наших розширюваних операцій.
+                Постійна комунікація та пряма підтримка гарантують, що ви ніколи не залишитеся наодинці.
+              </p>
+            </CardContent>
+          </Card>
+
+          <Card className="text-center p-6 border-0 shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <CardContent className="pt-6">
+              <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <HeartHandshake className="h-8 w-8 text-blue-600" />
+              </div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Підтримка</h3>
+              <p className="text-gray-600">
+                Всебічне супроводження та постійні можливості розвитку в нашій зростаючій компанії.
               </p>
             </CardContent>
           </Card>
