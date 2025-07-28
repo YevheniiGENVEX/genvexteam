@@ -22,7 +22,7 @@ const LifeAtGenvex = () => {
     },
     {
       title: "Arbeitsplatz",
-      description: "Organisierte und effiziente Paket-Sortierung und Beladung",
+      description: "",
       image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=300&fit=crop"
     },
     {
