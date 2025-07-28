@@ -18,7 +18,7 @@ const LifeAtGenvex = () => {
     {
       title: "Unsere Lieferflotte",
       description: "Moderne, gut gewartete Fahrzeuge mit neuester Liefertechnologie ausgestattet",
-      image: "https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?w=400&h=300&fit=crop"
+      image: "https://i.imgur.com/BoQ9lWO.jpeg"
     },
     {
       title: "Arbeitsplatz",
@@ -28,7 +28,7 @@ const LifeAtGenvex = () => {
     {
       title: "Ladestation",
       description: "Strukturierte und effiziente Verfahren für Paketsortierung und -verladung",
-      image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=400&h=300&fit=crop"
+      image: "https://i.imgur.com/pMREY0z.jpeg"
     }
   ];
 
