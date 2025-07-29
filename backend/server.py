@@ -70,21 +70,38 @@ async def send_telegram_notification(application_data: ContactApplication):
 
 ⏰ Время подачи / Einreichungszeit: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}"""
 
+    success_count = 0
+    total_attempts = 0
+    
     try:
         async with httpx.AsyncClient() as client:
             for chat_id in TELEGRAM_CHAT_IDS:
                 if chat_id.strip():  # Skip empty chat IDs
-                    url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
-                    data = {
-                        "chat_id": chat_id.strip(),
-                        "text": message,
-                        "parse_mode": "HTML"
-                    }
-                    response = await client.post(url, json=data)
-                    if response.status_code != 200:
-                        logging.error(f"Failed to send Telegram message to {chat_id}: {response.text}")
-                        return False
-        return True
+                    total_attempts += 1
+                    try:
+                        url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
+                        data = {
+                            "chat_id": chat_id.strip(),
+                            "text": message,
+                            "parse_mode": "HTML"
+                        }
+                        response = await client.post(url, json=data)
+                        if response.status_code == 200:
+                            success_count += 1
+                            logging.info(f"Telegram message sent successfully to chat ID: {chat_id}")
+                        else:
+                            logging.error(f"Failed to send Telegram message to {chat_id}: {response.text}")
+                    except Exception as e:
+                        logging.error(f"Error sending to chat ID {chat_id}: {str(e)}")
+        
+        # Return True if at least one message was sent successfully
+        if success_count > 0:
+            logging.info(f"Telegram notifications sent to {success_count}/{total_attempts} chat IDs")
+            return True
+        else:
+            logging.error("Failed to send Telegram notifications to any chat ID")
+            return False
+            
     except Exception as e:
         logging.error(f"Error sending Telegram notification: {str(e)}")
         return False
