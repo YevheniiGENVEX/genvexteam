@@ -144,19 +144,7 @@ function App() {
   };
 
   return (
-    <div className="App">
-      {/* Simple theme switcher with vanilla JavaScript */}
-      <div className="fixed top-4 right-20 z-50 bg-blue-100 dark:bg-gray-800 shadow-xl rounded-xl p-3 border-2 border-blue-300 dark:border-gray-600">
-        <button
-          id="theme-toggle-btn"
-          onClick={() => window.toggleTheme && window.toggleTheme()}
-          className="flex items-center justify-center w-12 h-12 rounded-xl transition-all duration-300 hover:bg-blue-200 dark:hover:bg-gray-700 bg-white dark:bg-gray-900 shadow-md hover:scale-105 text-3xl select-none"
-          title="Toggle Dark/Light Mode"
-        >
-          🌙
-        </button>
-      </div>
-      
+    <div className="App">      
       <BrowserRouter>
         <Routes>
           <Route 
