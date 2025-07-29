@@ -147,7 +147,7 @@ const OpenPositions_UA = () => {
                 Готові розпочати свою подорож?
               </h3>
               <p className="text-gray-600 mb-6">
-                Приєднуйтеся до команди GENVEX Team сьогодні та станьте частиною найнадійнішої служби доставки Гамбурга.
+                Приєднуйтеся до дружньої команди GENVEX Team сьогодні та станьте частиною надійної служби доставки Гамбурга
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button 
