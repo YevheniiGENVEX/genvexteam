@@ -62,11 +62,11 @@ def test_submit_application():
     
     # Sample application data as specified in the review request
     test_data = {
-        "name": "Fixed Test User",
-        "email": "fixedtest@example.com",
-        "phone": "+49 987 654 321",
+        "name": "Group Test User",
+        "email": "grouptest@genvex.team",
+        "phone": "+49 111 222 333",
         "position": "delivery-driver",
-        "message": "Testing fixed Telegram integration"
+        "message": "Testing notifications to multiple chat IDs including group"
     }
     
     print(f"Submitting test application: {json.dumps(test_data, indent=2)}")
