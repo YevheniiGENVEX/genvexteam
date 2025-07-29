@@ -33,7 +33,7 @@ const Contact = () => {
     setSubmitStatus(null);
 
     try {
-      const response = await mockAPI.submitApplication(formData);
+      const response = await api.submitApplication(formData);
       if (response.success) {
         setSubmitStatus('success');
         setFormData({
