@@ -36,7 +36,7 @@ export const mockData = {
     {
       id: 4,
       question: "Wie hoch ist das Startgehalt und gibt es Prämien?",
-      answer: "Das Startgehalt beträgt €15,50 brutto pro Stunde plus €10 netto täglich für Verpflegung. Das bedeutet eine Gesamtvergütung von über €2.700 pro Monat bei Vollzeitbeschäftigung."
+      answer: "Das Startgehalt beträgt €15,50 brutto pro Stunde plus €10 netto täglich für Verpflegung. Das bedeutet eine Gesamtvergütung von über €2.700 brutto pro Monat bei Vollzeitbeschäftigung, ohne Berücksichtigung von Boni."
     },
     {
       id: 5,
