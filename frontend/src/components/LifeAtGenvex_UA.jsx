@@ -126,7 +126,7 @@ const LifeAtGenvex_UA = () => {
         {/* Team Photos Tab */}
         {activeTab === 'team-photos' && (
           <div className="space-y-8">
-            <div className="grid md:grid-cols-3 gap-6">
+            <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
               {teamPhotos.map((photo, index) => (
                 <Card key={index} className="shadow-lg border-0 overflow-hidden hover:shadow-xl transition-shadow duration-300">
                   <div className="h-48 bg-cover bg-center" style={{ backgroundImage: `url(${photo.image})` }}>
