@@ -11,7 +11,7 @@ export const mockData = {
 
   // Kontaktinformationen
   contact: {
-    address: "Unterm Heilbrunnen 8, 21029 Hamburg, Deutschland",
+    address: "Peutestrasse 32, 20539 Hamburg, Deutschland",
     email: "genvexteam@gmail.com",
     phone: "+49 176 400 99823"
   },
