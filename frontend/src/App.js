@@ -20,10 +20,27 @@ import FAQ_UA from "./components/FAQ_UA";
 import Contact_UA from "./components/Contact_UA";
 import Footer_UA from "./components/Footer_UA";
 
+// Theme switcher component
+const ThemeSwitcher = ({ isDark, onThemeChange }) => {
+  return (
+    <div className="fixed top-4 right-4 z-50 bg-white dark:bg-gray-800 shadow-lg rounded-lg p-2 border border-gray-200 dark:border-gray-600">
+      <button
+        onClick={onThemeChange}
+        className="flex items-center justify-center w-10 h-10 rounded-lg transition-colors duration-200 hover:bg-gray-100 dark:hover:bg-gray-700"
+        title={isDark ? "Switch to Light Mode" : "Switch to Dark Mode"}
+      >
+        <span className="text-2xl">
+          {isDark ? "☀️" : "🌙"}
+        </span>
+      </button>
+    </div>
+  );
+};
+
 // Language switcher component
 const LanguageSwitcher = ({ currentLang, onLanguageChange }) => {
   return (
-    <div className="fixed top-20 right-4 z-40 bg-white shadow-lg rounded-lg p-2 border">
+    <div className="fixed top-20 right-4 z-40 bg-white dark:bg-gray-800 shadow-lg rounded-lg p-2 border border-gray-200 dark:border-gray-600">
       <div className="flex gap-2">
         <button
           onClick={() => onLanguageChange('de')}
