@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/genvexteam/static/css/main.5df1e527.css",
-    "main.js": "/genvexteam/static/js/main.2f182b15.js",
-    "index.html": "/genvexteam/index.html",
-    "main.5df1e527.css.map": "/genvexteam/static/css/main.5df1e527.css.map",
-    "main.2f182b15.js.map": "/genvexteam/static/js/main.2f182b15.js.map"
+    "main.css": "/static/css/main.25156b12.css",
+    "main.js": "/static/js/main.c47c287f.js",
+    "index.html": "/index.html",
+    "main.25156b12.css.map": "/static/css/main.25156b12.css.map",
+    "main.c47c287f.js.map": "/static/js/main.c47c287f.js.map"
   },
   "entrypoints": [
-    "static/css/main.5df1e527.css",
-    "static/js/main.2f182b15.js"
+    "static/css/main.25156b12.css",
+    "static/js/main.c47c287f.js"
   ]
 }
