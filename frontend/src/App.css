@@ -3,18 +3,29 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Remove default text centering that disrupts natural reading flow */
-.App {
-  text-align: left;
-}
-
-/* Ensure consistent font rendering */
+/* Dark mode base styles */
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
     "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
     "Helvetica Neue", sans-serif;
+  background-color: white;
+  color: #1f2937;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Dark mode body styles */
+.dark body {
+  background-color: #111827;
+  color: #f9fafb;
+}
+
+/* Remove default text centering that disrupts natural reading flow */
+.App {
+  text-align: left;
+  min-height: 100vh;
+  background-color: inherit;
 }
 
 /* Button hover animations */
@@ -41,6 +52,11 @@ select:focus {
   box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
 
+/* Dark mode card hover effects */
+.dark .card-hover:hover {
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5), 0 10px 10px -5px rgba(0, 0, 0, 0.3);
+}
+
 /* Loading animation */
 @keyframes spin {
   to {
@@ -57,6 +73,10 @@ select:focus {
   background: linear-gradient(135deg, #eff6ff 0%, #ffffff 100%);
 }
 
+.dark .gradient-blue {
+  background: linear-gradient(135deg, #1e293b 0%, #111827 100%);
+}
+
 /* Ensure proper button contrast */
 .btn-primary {
   background-color: #2563eb;
@@ -70,16 +90,36 @@ select:focus {
   transform: translateY(-1px);
 }
 
+/* Dark mode button adjustments */
+.dark .btn-primary {
+  background-color: #3b82f6;
+  border-color: #3b82f6;
+}
+
+.dark .btn-primary:hover {
+  background-color: #2563eb;
+  border-color: #2563eb;
+}
+
 /* Selection styling */
 ::selection {
   background-color: #3b82f6;
   color: white;
 }
 
+.dark ::selection {
+  background-color: #60a5fa;
+  color: #111827;
+}
+
 /* Focus visibility for accessibility */
 :focus-visible {
   outline: 2px solid #3b82f6;
   outline-offset: 2px;
+}
+
+.dark :focus-visible {
+  outline-color: #60a5fa;
 }
 
 /* Smooth transitions for interactive elements */
