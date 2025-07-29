@@ -165,7 +165,7 @@ const OpenPositions_UA = () => {
                   size="lg"
                   className="border-blue-600 text-blue-600 hover:bg-blue-50 px-8 transition-colors duration-200"
                 >
-                  Дізнатися про життя в GENVEX
+                  Дізнатися про життя в GENVEX Team
                 </Button>
               </div>
             </div>
