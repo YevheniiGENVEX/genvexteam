@@ -99,7 +99,7 @@ const LifeAtGenvex = () => {
                             <Badge className="bg-blue-600 dark:bg-blue-500 text-white mb-2">
                               {item.time}
                             </Badge>
-                            <p className="text-gray-800 font-medium">{item.activity}</p>
+                            <p className="text-gray-800 dark:text-gray-200 font-medium">{item.activity}</p>
                           </div>
                         </div>
                       </div>
@@ -107,11 +107,11 @@ const LifeAtGenvex = () => {
                   ))}
                 </div>
                 
-                <div className="mt-8 p-6 bg-gradient-to-br from-blue-50 to-blue-100 rounded-lg">
-                  <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                <div className="mt-8 p-6 bg-gradient-to-br from-blue-50 to-blue-100 dark:from-gray-700 dark:to-gray-600 rounded-lg">
+                  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">
                     Was unseren Arbeitstag besonders macht
                   </h3>
-                  <ul className="text-gray-700 space-y-2">
+                  <ul className="text-gray-700 dark:text-gray-300 space-y-2">
                     <li>• <strong>Flexibilität:</strong> Routen sind effizient geplant, um Stress zu minimieren</li>
                     <li>• <strong>Unterstützung:</strong> Immer verbunden mit unserem Dispatch-Team für Hilfe</li>
                     <li>• <strong>Technologie:</strong> Erweiterte GPS- und Lieferungs-Apps machen die Navigation einfach</li>
