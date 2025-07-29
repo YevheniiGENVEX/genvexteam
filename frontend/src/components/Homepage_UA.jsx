@@ -16,11 +16,11 @@ const Homepage_UA = () => {
       {/* Hero Section */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
         <div className="text-center">
-          <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
+          <h1 className="text-4xl md:text-6xl font-bold text-gray-900 dark:text-white mb-6">
             Приєднуйтеся до команди GENVEX Team –{' '}
-            <span className="text-blue-600">Доставляємо успіх</span> з Amazon
+            <span className="text-blue-600 dark:text-blue-400">Доставляємо успіх</span> з Amazon
           </h1>
-          <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto">
+          <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8 max-w-3xl mx-auto">
             Станьте частиною провідного партнера служби доставки Amazon у Гамбурзі. 
             Ми шукаємо надійних водіїв, які хочуть розвиватися разом з нами та робити реальний внесок у наше співтовариство.
           </p>
