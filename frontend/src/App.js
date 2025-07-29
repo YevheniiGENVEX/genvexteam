@@ -111,11 +111,37 @@ const UkrainianVersion = ({ onLanguageChange }) => (
 
 function App() {
   const [language, setLanguage] = React.useState('de');
+  const [isDarkMode, setIsDarkMode] = React.useState(false);
+
+  // Load theme preference from localStorage on mount
+  React.useEffect(() => {
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark') {
+      setIsDarkMode(true);
+      document.documentElement.classList.add('dark');
+    } else {
+      setIsDarkMode(false);
+      document.documentElement.classList.remove('dark');
+    }
+  }, []);
 
   const handleLanguageChange = (newLang) => {
     setLanguage(newLang);
     // Scroll to top when changing language
     window.scrollTo(0, 0);
+  };
+
+  const handleThemeChange = () => {
+    const newTheme = !isDarkMode;
+    setIsDarkMode(newTheme);
+    
+    if (newTheme) {
+      document.documentElement.classList.add('dark');
+      localStorage.setItem('theme', 'dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+      localStorage.setItem('theme', 'light');
+    }
   };
 
   return (
