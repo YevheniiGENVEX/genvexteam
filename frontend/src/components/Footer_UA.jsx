@@ -56,7 +56,7 @@ const Footer_UA = () => {
                   onClick={() => scrollToSection('life')}
                   className="text-gray-300 hover:text-blue-400 transition-colors duration-200"
                 >
-                  Життя в GENVEX
+                  Життя в GENVEX Team
                 </button>
               </li>
               <li>
