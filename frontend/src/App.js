@@ -146,33 +146,39 @@ function App() {
     }
   }, []);
 
+  // Add global theme toggle function to window
+  React.useEffect(() => {
+    window.toggleTheme = () => {
+      const htmlElement = document.documentElement;
+      const currentlyDark = htmlElement.classList.contains('dark');
+      
+      if (currentlyDark) {
+        htmlElement.classList.remove('dark');
+        localStorage.setItem('theme', 'light');
+        setIsDarkMode(false);
+        console.log('Switched to light mode');
+        
+        // Update button icon
+        const button = document.querySelector('#theme-toggle-btn');
+        if (button) button.innerHTML = '🌙';
+      } else {
+        htmlElement.classList.add('dark');
+        localStorage.setItem('theme', 'dark');
+        setIsDarkMode(true);
+        console.log('Switched to dark mode');
+        
+        // Update button icon
+        const button = document.querySelector('#theme-toggle-btn');
+        if (button) button.innerHTML = '☀️';
+      }
+    };
+  }, []);
+
   const handleLanguageChange = (newLang) => {
     setLanguage(newLang);
     // Scroll to top when changing language
     window.scrollTo(0, 0);
   };
-
-  const handleThemeChange = React.useCallback(() => {
-    console.log('handleThemeChange called, current isDarkMode:', isDarkMode);
-    
-    // Toggle theme immediately on DOM
-    const htmlElement = document.documentElement;
-    const willBeDark = !isDarkMode;
-    
-    if (willBeDark) {
-      htmlElement.classList.add('dark');
-      localStorage.setItem('theme', 'dark');
-      console.log('Applied dark theme to DOM');
-    } else {
-      htmlElement.classList.remove('dark');
-      localStorage.setItem('theme', 'light');
-      console.log('Applied light theme to DOM');
-    }
-    
-    // Update React state
-    setIsDarkMode(willBeDark);
-    console.log('Updated state to:', willBeDark);
-  }, [isDarkMode]);
 
   return (
     <div className="App">
