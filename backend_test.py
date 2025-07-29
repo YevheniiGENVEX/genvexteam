@@ -172,6 +172,56 @@ def test_telegram_api_connectivity():
         print(f"❌ Telegram API connectivity test failed: {e}")
         return False
 
+def test_individual_chat_ids():
+    """Test individual chat IDs to see which ones are reachable"""
+    print("\n=== Testing Individual Chat IDs ===")
+    
+    bot_token = "8493941012:AAEIa1qTo1jtdD40O1CQfWFM-cha7nqCA10"
+    chat_ids = ["900121043", "5392991169", "-1002586354276"]
+    
+    results = {}
+    
+    for chat_id in chat_ids:
+        print(f"\nTesting chat ID: {chat_id}")
+        try:
+            # Test with a simple message to see if chat is reachable
+            test_message = "🔍 Test message to verify chat accessibility"
+            
+            response = requests.post(
+                f"https://api.telegram.org/bot{bot_token}/sendMessage",
+                json={
+                    "chat_id": chat_id,
+                    "text": test_message
+                },
+                timeout=10
+            )
+            
+            print(f"  Status Code: {response.status_code}")
+            
+            if response.status_code == 200:
+                result = response.json()
+                if result.get("ok"):
+                    print(f"  ✅ Chat ID {chat_id} is reachable")
+                    results[chat_id] = "reachable"
+                else:
+                    print(f"  ❌ Chat ID {chat_id} failed: {result.get('description', 'Unknown error')}")
+                    results[chat_id] = f"failed: {result.get('description', 'Unknown error')}"
+            else:
+                error_info = response.json() if response.headers.get('content-type', '').startswith('application/json') else response.text
+                print(f"  ❌ Chat ID {chat_id} failed with status {response.status_code}: {error_info}")
+                results[chat_id] = f"failed: HTTP {response.status_code}"
+                
+        except Exception as e:
+            print(f"  ❌ Chat ID {chat_id} error: {e}")
+            results[chat_id] = f"error: {str(e)}"
+    
+    print(f"\n📊 Chat ID Test Results:")
+    for chat_id, result in results.items():
+        status_icon = "✅" if result == "reachable" else "❌"
+        print(f"  {status_icon} {chat_id}: {result}")
+    
+    return results
+
 def run_comprehensive_test():
     """Run all backend tests"""
     print("🚀 Starting GENVEX Team Backend Test Suite")
