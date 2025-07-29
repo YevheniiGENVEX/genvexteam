@@ -23,16 +23,16 @@ import Footer_UA from "./components/Footer_UA";
 // Theme switcher component
 const ThemeSwitcher = ({ isDark, onThemeChange }) => {
   return (
-    <div className="fixed top-4 right-16 z-50 bg-white dark:bg-gray-800 shadow-lg rounded-lg p-2 border border-gray-200 dark:border-gray-600">
+    <div className="fixed top-4 right-4 z-50 bg-blue-100 dark:bg-gray-800 shadow-xl rounded-xl p-3 border-2 border-blue-300 dark:border-gray-600">
       <button
         onClick={() => {
           console.log('Theme switcher button clicked, current mode:', isDark);
           onThemeChange();
         }}
-        className="flex items-center justify-center w-10 h-10 rounded-lg transition-colors duration-200 hover:bg-gray-100 dark:hover:bg-gray-700"
+        className="flex items-center justify-center w-12 h-12 rounded-xl transition-all duration-300 hover:bg-blue-200 dark:hover:bg-gray-700 bg-white dark:bg-gray-900 shadow-md"
         title={isDark ? "Switch to Light Mode" : "Switch to Dark Mode"}
       >
-        <span className="text-2xl">
+        <span className="text-3xl">
           {isDark ? "☀️" : "🌙"}
         </span>
       </button>
