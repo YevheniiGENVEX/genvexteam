@@ -103,20 +103,20 @@ const FAQ = () => {
 
         {/* Additional Help Section */}
         <div className="mt-12 text-center">
-          <Card className="bg-gradient-to-br from-blue-50 to-blue-100 shadow-lg border-0">
+          <Card className="bg-gradient-to-br from-blue-50 to-blue-100 dark:from-gray-700 dark:to-gray-600 shadow-lg border-0">
             <CardContent className="p-8">
-              <MessageCircle className="h-12 w-12 text-blue-600 mx-auto mb-4" />
-              <h3 className="text-xl font-bold text-gray-900 mb-3">
+              <MessageCircle className="h-12 w-12 text-blue-600 dark:text-blue-400 mx-auto mb-4" />
+              <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
                 Still have questions?
               </h3>
-              <p className="text-gray-700 mb-6 max-w-2xl mx-auto">
+              <p className="text-gray-700 dark:text-gray-300 mb-6 max-w-2xl mx-auto">
                 Our team is here to help! Reach out to us directly and we'll provide 
                 personalized answers to any specific questions about joining GENVEX Team.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button 
                   onClick={() => scrollToSection('contact')}
-                  className="bg-blue-600 hover:bg-blue-700 text-white transition-colors duration-200"
+                  className="bg-blue-600 hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 text-white transition-colors duration-200"
                   size="lg"
                 >
                   Kontaktieren Sie uns jetzt
@@ -124,7 +124,7 @@ const FAQ = () => {
                 <Button 
                   onClick={() => window.open(`mailto:genvexteam@gmail.com?subject=Frage zur Zustellfahrer-Position`, '_blank')}
                   variant="outline"
-                  className="border-blue-600 text-blue-600 hover:bg-white transition-colors duration-200"
+                  className="border-blue-600 text-blue-600 hover:bg-white dark:border-blue-400 dark:text-blue-400 dark:hover:bg-gray-700 transition-colors duration-200"
                   size="lg"
                 >
                   Direkt E-Mail senden
