@@ -144,7 +144,7 @@ const Contact = () => {
                 </h3>
                 <ul className="space-y-2 text-sm text-gray-700">
                   <li>• Bewerbungsbestätigung innerhalb von 1 Stunde</li>
-                  <li>• Erstes Telefongespräch innerhalb von 1 Tag</li>
+                  <li>• Erster Kontakt — spätestens 12 Stunden nach der Anfrage</li>
                   <li>• Kompletter Einstellungsprozess dauert normalerweise 1-2 Wochen (Training und Einarbeitung bis zum selbstständigen Arbeitsstart- bezahlt)</li>
                   <li>• Direkter Telefonsupport während der Geschäftszeiten</li>
                 </ul>
