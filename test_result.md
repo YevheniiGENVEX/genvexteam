@@ -125,6 +125,9 @@ backend:
       - working: true
         agent: "testing"
         comment: "✅ FIXED TELEGRAM INTEGRATION VERIFIED: Chat ID issue resolved successfully. Removed invalid chat ID 5392991169, now only using working chat ID 900121043. Test application submitted with data: Fixed Test User, fixedtest@example.com, +49 987 654 321, delivery-driver. API returned success: true (not false anymore). Application stored in MongoDB with ID d7b30950-0eb0-4b11-affc-67a03d124d73. Telegram notification sent successfully to chat ID 900121043 only. No 'chat not found' errors. Backend logs confirm: 'Telegram notifications sent to 1/1 chat IDs' and 'Application submitted and Telegram notification sent'. Fix completely resolved the partial failure issue."
+      - working: true
+        agent: "testing"
+        comment: "✅ MULTI-CHAT ID INTEGRATION TESTED SUCCESSFULLY: Comprehensive testing of updated Telegram Bot integration with multiple chat IDs configuration completed. Test application submitted with specified data: 'Group Test User', 'grouptest@genvex.team', '+49 111 222 333', 'delivery-driver', 'Testing notifications to multiple chat IDs including group'. RESULTS: API returned success: true with application_id 75f21e70-8424-4a1a-9f82-170aaf3b32fa. Application correctly stored in MongoDB with all fields including status: pending and submitted_at timestamp. ALL THREE CHAT IDs NOW WORKING: 900121043 (known working) ✅, 5392991169 (previously failed, now working) ✅, -1002586354276 (new group chat ID) ✅. Backend logs confirm: 'Telegram notifications sent to 3/3 chat IDs' with individual success messages for each chat ID. The improved partial failure logic is working correctly - API returns success even if some chat IDs fail, but in this case all chat IDs are reachable and receiving notifications successfully. Multi-recipient notification system fully functional for the user's group setup."
 
   - task: "Contact Form API Endpoint"
     implemented: true
