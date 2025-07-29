@@ -20,20 +20,37 @@ import FAQ_UA from "./components/FAQ_UA";
 import Contact_UA from "./components/Contact_UA";
 import Footer_UA from "./components/Footer_UA";
 
-// Theme switcher component
+// Theme switcher component with direct DOM manipulation
 const ThemeSwitcher = ({ isDark, onThemeChange }) => {
+  const handleClick = React.useCallback(() => {
+    console.log('Direct click handler triggered');
+    
+    const htmlElement = document.documentElement;
+    const currentlyDark = htmlElement.classList.contains('dark');
+    
+    if (currentlyDark) {
+      htmlElement.classList.remove('dark');
+      localStorage.setItem('theme', 'light');
+      console.log('Switched to light mode');
+    } else {
+      htmlElement.classList.add('dark');
+      localStorage.setItem('theme', 'dark');
+      console.log('Switched to dark mode');
+    }
+    
+    // Force a re-render by calling the parent handler
+    onThemeChange();
+  }, [onThemeChange]);
+
   return (
     <div className="fixed top-4 right-20 z-50 bg-blue-100 dark:bg-gray-800 shadow-xl rounded-xl p-3 border-2 border-blue-300 dark:border-gray-600">
       <button
-        onClick={() => {
-          console.log('Theme switcher button clicked, current mode:', isDark);
-          onThemeChange();
-        }}
-        className="flex items-center justify-center w-12 h-12 rounded-xl transition-all duration-300 hover:bg-blue-200 dark:hover:bg-gray-700 bg-white dark:bg-gray-900 shadow-md"
-        title={isDark ? "Switch to Light Mode" : "Switch to Dark Mode"}
+        onClick={handleClick}
+        className="flex items-center justify-center w-12 h-12 rounded-xl transition-all duration-300 hover:bg-blue-200 dark:hover:bg-gray-700 bg-white dark:bg-gray-900 shadow-md hover:scale-105"
+        title={isDark ? "Switch to Light Mode ☀️" : "Switch to Dark Mode 🌙"}
       >
-        <span className="text-3xl">
-          {isDark ? "☀️" : "🌙"}
+        <span className="text-3xl select-none">
+          {document.documentElement.classList.contains('dark') ? "☀️" : "🌙"}
         </span>
       </button>
     </div>
