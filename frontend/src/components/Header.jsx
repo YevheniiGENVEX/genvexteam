@@ -112,17 +112,6 @@ const Header = () => {
                 Kontakt
               </button>
               
-              {/* Mobile Theme Switcher */}
-              <button
-                onClick={toggleTheme}
-                className="flex items-center justify-between py-2 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200 font-medium"
-              >
-                <span>Theme</span>
-                <span className="text-xl">
-                  {isDarkMode ? "☀️" : "🌙"}
-                </span>
-              </button>
-              
               <Button 
                 onClick={() => scrollToSection('contact')}
                 className="bg-blue-600 hover:bg-blue-700 text-white w-full mt-4 transition-colors duration-200"
