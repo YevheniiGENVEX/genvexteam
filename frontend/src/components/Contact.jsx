@@ -245,14 +245,14 @@ const Contact = () => {
                   </div>
 
                   <div>
-                    <Label htmlFor="message">Nachricht oder Fragen (Optional)</Label>
+                    <Label htmlFor="message" className="text-gray-700 dark:text-gray-300">Nachricht oder Fragen (Optional)</Label>
                     <Textarea
                       id="message"
                       name="message"
                       rows={4}
                       value={formData.message}
                       onChange={handleInputChange}
-                      className="mt-1"
+                      className="mt-1 dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:placeholder-gray-400"
                       placeholder="Erzählen Sie uns von Ihren Erfahrungen, stellen Sie Fragen oder teilen Sie uns alles andere mit, was wir wissen sollten..."
                     />
                   </div>
