@@ -188,7 +188,7 @@ const Contact = () => {
 
                 <form onSubmit={handleSubmit} className="space-y-4">
                   <div>
-                    <Label htmlFor="name">Vollständiger Name *</Label>
+                    <Label htmlFor="name" className="text-gray-700 dark:text-gray-300">Vollständiger Name *</Label>
                     <Input
                       id="name"
                       name="name"
@@ -196,7 +196,7 @@ const Contact = () => {
                       required
                       value={formData.name}
                       onChange={handleInputChange}
-                      className="mt-1"
+                      className="mt-1 dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:placeholder-gray-400"
                       placeholder="Geben Sie Ihren vollständigen Namen ein"
                     />
                   </div>
