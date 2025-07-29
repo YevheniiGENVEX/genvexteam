@@ -75,7 +75,7 @@ const Contact_UA = () => {
               <CardHeader className="bg-gradient-to-r from-blue-50 to-white">
                 <CardTitle className="text-xl text-gray-900 flex items-center">
                   <MapPin className="h-5 w-5 mr-2 text-blue-600" />
-                  Відвідайте наш офіс
+                  Наш офіс
                 </CardTitle>
               </CardHeader>
               <CardContent className="p-6">
