@@ -67,8 +67,8 @@ const LifeAtGenvex = () => {
             variant={activeTab === 'team-photos' ? 'default' : 'outline'}
             className={`mb-2 transition-colors duration-200 ${
               activeTab === 'team-photos' 
-                ? 'bg-blue-600 hover:bg-blue-700 text-white' 
-                : 'border-blue-600 text-blue-600 hover:bg-blue-50'
+                ? 'bg-blue-600 hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 text-white' 
+                : 'border-blue-600 text-blue-600 hover:bg-blue-50 dark:border-blue-400 dark:text-blue-400 dark:hover:bg-gray-700'
             }`}
           >
             <Users className="h-4 w-4 mr-2" />
