@@ -165,7 +165,7 @@ const OpenPositions = () => {
                   size="lg"
                   className="border-blue-600 text-blue-600 hover:bg-blue-50 px-8 transition-colors duration-200"
                 >
-                  Leben bei GENVEX erfahren
+                  Leben bei GENVEX Team erfahren
                 </Button>
               </div>
             </div>
