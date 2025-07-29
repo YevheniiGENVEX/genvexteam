@@ -132,15 +132,20 @@ function App() {
   };
 
   const handleThemeChange = () => {
+    console.log('Theme change triggered, current isDarkMode:', isDarkMode);
     const newTheme = !isDarkMode;
     setIsDarkMode(newTheme);
+    
+    console.log('Setting theme to:', newTheme ? 'dark' : 'light');
     
     if (newTheme) {
       document.documentElement.classList.add('dark');
       localStorage.setItem('theme', 'dark');
+      console.log('Applied dark theme');
     } else {
       document.documentElement.classList.remove('dark');
       localStorage.setItem('theme', 'light');
+      console.log('Applied light theme');
     }
   };
 
