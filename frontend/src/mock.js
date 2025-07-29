@@ -46,7 +46,7 @@ export const mockData = {
     {
       id: 6,
       question: "Welche körperlichen Anforderungen gibt es?",
-      answer: "Fahrer sollten körperlich fit sein für das Pakethandling. 90% der Pakete wiegen maximal 5kg, nur sehr selten sind schwerere Pakete bis 23kg dabei. Wir bieten Schulungen zu ordnungsgemäßen Hebetechniken und Sicherheitsverfahren."
+      answer: "Fahrer sollten körperlich gesund sein für das Pakethandling. 90% der Pakete wiegen maximal 2 kg, nur sehr selten sind schwerere Pakete bis 23 kg dabei. Wir bieten Schulungen zu ordnungsgemäßen Hebetechniken und Sicherheitsverfahren sowie Hilfsmittel."
     },
     {
       id: 8,
