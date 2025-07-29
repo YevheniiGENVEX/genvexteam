@@ -146,6 +146,7 @@ function App() {
 
   return (
     <div className="App">
+      <ThemeSwitcher isDark={isDarkMode} onThemeChange={handleThemeChange} />
       <BrowserRouter>
         <Routes>
           <Route 
