@@ -83,7 +83,7 @@ const LifeAtGenvex_UA = () => {
               <CardHeader className="bg-gradient-to-r from-blue-50 to-white">
                 <CardTitle className="text-2xl text-gray-900 flex items-center">
                   <Clock className="h-6 w-6 mr-2 text-blue-600" />
-                  День з життя водія GENVEX
+                  День з життя водія GENVEX <span className="text-sm font-normal text-gray-500">(опціонально)</span>
                 </CardTitle>
               </CardHeader>
               <CardContent className="p-8">
