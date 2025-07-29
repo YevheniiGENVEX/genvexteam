@@ -122,6 +122,9 @@ backend:
       - working: true
         agent: "testing"
         comment: "✅ TESTED SUCCESSFULLY: Telegram bot integration working correctly. Bot token 8493941012:AAEIa1qTo1jtdD40O1CQfWFM-cha7nqCA10 is active (username: Genvex_zayavki_bot). Chat ID 900121043 receives messages successfully. Chat ID 5392991169 returns 'chat not found' error but doesn't break functionality. Application submissions trigger bilingual German/Ukrainian notifications as expected. Minor: One chat ID unreachable but core functionality works."
+      - working: true
+        agent: "testing"
+        comment: "✅ FIXED TELEGRAM INTEGRATION VERIFIED: Chat ID issue resolved successfully. Removed invalid chat ID 5392991169, now only using working chat ID 900121043. Test application submitted with data: Fixed Test User, fixedtest@example.com, +49 987 654 321, delivery-driver. API returned success: true (not false anymore). Application stored in MongoDB with ID d7b30950-0eb0-4b11-affc-67a03d124d73. Telegram notification sent successfully to chat ID 900121043 only. No 'chat not found' errors. Backend logs confirm: 'Telegram notifications sent to 1/1 chat IDs' and 'Application submitted and Telegram notification sent'. Fix completely resolved the partial failure issue."
 
   - task: "Contact Form API Endpoint"
     implemented: true
@@ -140,6 +143,9 @@ backend:
       - working: true
         agent: "testing"
         comment: "✅ TESTED SUCCESSFULLY: /api/submit-application endpoint working perfectly. Tested with sample data (name: Test User, email: test@example.com, phone: +49 123 456 789, position: delivery-driver). API returns success response with generated UUID application_id. Applications stored correctly in MongoDB with all required fields. Health check endpoint /api/ also working correctly."
+      - working: true
+        agent: "testing"
+        comment: "✅ RE-TESTED WITH FIXED DATA: /api/submit-application endpoint continues to work perfectly after Telegram fix. Tested with Fixed Test User data. API returns success: true with application_id d7b30950-0eb0-4b11-affc-67a03d124d73. Application correctly stored in MongoDB with all fields including status: pending and submitted_at timestamp. Health check endpoint /api/ also confirmed working."
 
 frontend:
   - task: "Update Contact Form to Use Real API"
