@@ -164,7 +164,7 @@ const Contact = () => {
                   Schnellbewerbung
                 </Badge>
               </CardHeader>
-              <CardContent className="p-6">
+              <CardContent className="p-6 dark:bg-gray-800">
                 {submitStatus === 'success' && (
                   <div className="mb-6 p-4 bg-green-50 border border-green-200 rounded-lg">
                     <div className="flex items-center space-x-2">
