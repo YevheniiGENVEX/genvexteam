@@ -52,7 +52,7 @@ const Homepage = () => {
             Ihr Partner für exzellente Zustellung
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Als offizieller Amazon Delivery Service Partner (DSP) in Hamburg verbindet das GENVEX Team 
+            Als offizieller Amazon Delivery Service Partner in Hamburg verbindet das GENVEX Team 
             die Zuverlässigkeit des Amazon-Logistiknetzwerks mit unserem Engagement für Mitarbeiterentwicklung und -zufriedenheit.
           </p>
         </div>
