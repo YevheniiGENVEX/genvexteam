@@ -156,7 +156,7 @@ const Homepage = () => {
               <div className="text-center">
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">Bereit, Teil unseres Teams zu werden?</h3>
                 <p className="text-gray-700 mb-6">
-                  Machen Sie den ersten Schritt zu einer lohnenden Karriere im Lieferservice mit Hamburgs vertrauensvollem Amazon DSP.
+                  Machen Sie den ersten Schritt zu einer lohnenden Karriere im Lieferservice mit Hamburgs vertrauensvollem Amazon Partner.
                 </p>
                 <Button 
                   onClick={() => scrollToSection('contact')}
