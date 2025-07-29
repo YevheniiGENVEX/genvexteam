@@ -55,14 +55,14 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-16 bg-white">
+    <section id="contact" className="py-16 bg-white dark:bg-gray-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
             Kontakt aufnehmen
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
             Bereit, Ihre Karriere mit dem GENVEX Team zu starten? Kontaktieren Sie uns noch heute. 
             Wir sind hier, um Ihre Fragen zu beantworten und Sie zu einem erfolgreichen Arbeitsstart zu führen.
           </p>
@@ -71,10 +71,10 @@ const Contact = () => {
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Contact Information */}
           <div className="space-y-8">
-            <Card className="shadow-lg border-0">
-              <CardHeader className="bg-gradient-to-r from-blue-50 to-white">
-                <CardTitle className="text-xl text-gray-900 flex items-center">
-                  <MapPin className="h-5 w-5 mr-2 text-blue-600" />
+            <Card className="shadow-lg border-0 dark:bg-gray-800 dark:shadow-gray-900/20">
+              <CardHeader className="bg-gradient-to-r from-blue-50 to-white dark:from-gray-700 dark:to-gray-800">
+                <CardTitle className="text-xl text-gray-900 dark:text-white flex items-center">
+                  <MapPin className="h-5 w-5 mr-2 text-blue-600 dark:text-blue-400" />
                   Unser Büro
                 </CardTitle>
               </CardHeader>
