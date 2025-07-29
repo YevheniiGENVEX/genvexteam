@@ -156,7 +156,7 @@ const Homepage_UA = () => {
               <div className="text-center">
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">Готові приєднатися до нас?</h3>
                 <p className="text-gray-700 mb-6">
-                  Зробіть перший крок до корисної кар'єри у службах доставки з надійним DSP Amazon у Гамбурзі.
+                  Зробіть перший крок до корисної кар'єри у службах доставки з надійним партнером Amazon у Гамбурзі.
                 </p>
                 <Button 
                   onClick={() => scrollToSection('contact')}
