@@ -27,7 +27,8 @@ const OpenPositions = () => {
     "Smartphone und Arbeitskleidung werden bereitgestellt",
     "Unterstützendes Teamumfeld und Mentoring",
     "Aufstiegsmöglichkeiten im Amazon-Netzwerk",
-    "Krankenversicherung"
+    "Krankenversicherung",
+    "Einzigartiges Bonussystem"
   ];
 
   return (
