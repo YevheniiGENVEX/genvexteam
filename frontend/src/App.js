@@ -43,7 +43,7 @@ const ThemeSwitcher = ({ isDark, onThemeChange }) => {
 // Language switcher component
 const LanguageSwitcher = ({ currentLang, onLanguageChange }) => {
   return (
-    <div className="fixed top-20 right-16 z-40 bg-white dark:bg-gray-800 shadow-lg rounded-lg p-2 border border-gray-200 dark:border-gray-600">
+    <div className="fixed top-24 right-4 z-40 bg-white dark:bg-gray-800 shadow-lg rounded-lg p-2 border border-gray-200 dark:border-gray-600">
       <div className="flex gap-2">
         <button
           onClick={() => onLanguageChange('de')}
