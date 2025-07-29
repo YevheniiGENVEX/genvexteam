@@ -156,7 +156,7 @@ const Header = () => {
               {/* Mobile Theme Switcher */}
               <button
                 onClick={toggleTheme}
-                className="flex items-center justify-between py-2 text-gray-700 hover:text-blue-600 transition-colors duration-200 font-medium"
+                className="flex items-center justify-between py-2 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200 font-medium"
               >
                 <span>Theme</span>
                 <span className="text-xl">
