@@ -178,9 +178,9 @@ const Contact = () => {
                 )}
 
                 {submitStatus === 'error' && (
-                  <div className="mb-6 p-4 bg-red-50 border border-red-200 rounded-lg">
-                    <p className="text-red-800 font-medium">Etwas ist schiefgelaufen</p>
-                    <p className="text-red-700 text-sm mt-1">
+                  <div className="mb-6 p-4 bg-red-50 dark:bg-red-900/30 border border-red-200 dark:border-red-700 rounded-lg">
+                    <p className="text-red-800 dark:text-red-300 font-medium">Etwas ist schiefgelaufen</p>
+                    <p className="text-red-700 dark:text-red-400 text-sm mt-1">
                       Bitte versuchen Sie es erneut oder kontaktieren Sie uns direkt unter genvexteam@gmail.com
                     </p>
                   </div>
