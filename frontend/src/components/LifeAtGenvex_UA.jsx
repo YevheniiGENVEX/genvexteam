@@ -39,10 +39,10 @@ const LifeAtGenvex_UA = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
             Життя в команді GENVEX
           </h2>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+          <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
             Дізнайтеся, як насправді працювати з провідною командою доставки Гамбурга. 
             Від щоденних рутин до командної культури - отримайте інсайдерський погляд на ваше майбутнє робоче місце.
           </p>
