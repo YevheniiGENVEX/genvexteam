@@ -58,17 +58,17 @@ async def send_telegram_notification(application_data: ContactApplication):
         return False
     
     # Format the message
-    message = f"""🔔 Новая заявка / Neue Bewerbung
+    message = f"""🔔 Нова заявка
 
-👤 Имя / Name: {application_data.name}
+👤 Ім'я: {application_data.name}
 📧 Email: {application_data.email}
-📱 Телефон / Telefon: {application_data.phone}
-💼 Позиция / Position: {application_data.position}
+📱 Телефон: {application_data.phone}
+💼 Позиція: {application_data.position}
 
-💬 Сообщение / Nachricht:
-{application_data.message if application_data.message else 'Не указано / Nicht angegeben'}
+💬 Про себе:
+{application_data.message if application_data.message else 'Не вказано'}
 
-⏰ Время подачи / Einreichungszeit: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}"""
+⏰ Час подачі: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}"""
 
     success_count = 0
     total_attempts = 0
