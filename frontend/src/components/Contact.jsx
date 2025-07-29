@@ -216,7 +216,7 @@ const Contact = () => {
                   </div>
 
                   <div>
-                    <Label htmlFor="phone">Telefonnummer *</Label>
+                    <Label htmlFor="phone" className="text-gray-700 dark:text-gray-300">Telefonnummer *</Label>
                     <Input
                       id="phone"
                       name="phone"
@@ -224,7 +224,7 @@ const Contact = () => {
                       required
                       value={formData.phone}
                       onChange={handleInputChange}
-                      className="mt-1"
+                      className="mt-1 dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:placeholder-gray-400"
                       placeholder="+49 xxx xxx xxxx"
                     />
                   </div>
