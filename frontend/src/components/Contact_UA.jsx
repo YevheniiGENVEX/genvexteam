@@ -33,7 +33,7 @@ const Contact_UA = () => {
     setSubmitStatus(null);
 
     try {
-      const response = await mockAPI_UA.submitApplication(formData);
+      const response = await api.submitApplication(formData);
       if (response.success) {
         setSubmitStatus('success');
         setFormData({
