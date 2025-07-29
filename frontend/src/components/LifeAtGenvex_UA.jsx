@@ -21,11 +21,6 @@ const LifeAtGenvex_UA = () => {
       image: "https://i.imgur.com/BoQ9lWO.jpeg"
     },
     {
-      title: "Робоче місце",
-      description: "",
-      image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=300&fit=crop"
-    },
-    {
       title: "Станція завантаження",
       description: "Організований та ефективний процес сортування та завантаження посилок",
       image: "https://i.imgur.com/pMREY0z.jpeg"
