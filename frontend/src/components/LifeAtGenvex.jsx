@@ -28,10 +28,10 @@ const LifeAtGenvex = () => {
   ];
 
   const dailySchedule = [
-    { time: "8:00", activity: "Ankunft im Depot", icon: Coffee },
+    { time: "10:40", activity: "Ankunft im Depot", icon: Coffee },
     { time: "10:50", activity: "Beladen der vorbereiteten Tour", icon: Truck },
-    { time: "11:00", activity: "Abfahrt zur Zustellung", icon: MapPin },
-    { time: "18:00", activity: "Rückkehr zum Depot, Abschlussverfahren", icon: Award }
+    { time: "11:10", activity: "Abfahrt zur Zustellung", icon: MapPin },
+    { time: "19:10", activity: "Rückkehr zum Depot, Abschlussverfahren", icon: Award }
   ];
 
   return (
