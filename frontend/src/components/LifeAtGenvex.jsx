@@ -35,14 +35,14 @@ const LifeAtGenvex = () => {
   ];
 
   return (
-    <section id="life" className="py-16 bg-white">
+    <section id="life" className="py-16 bg-white dark:bg-gray-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
             Leben bei GENVEX Team
           </h2>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+          <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
             Entdecken Sie, wie es wirklich ist, bei Hamburgs führendem Lieferteam zu arbeiten. 
             Von täglichen Routinen bis hin zur Teamkultur - erhalten Sie einen Einblick in Ihren zukünftigen Arbeitsplatz.
           </p>
