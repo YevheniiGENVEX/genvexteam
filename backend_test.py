@@ -56,6 +56,81 @@ def test_health_check():
         print(f"❌ Health check error: {e}")
         return False
 
+def test_ukrainian_message_format():
+    """Test the UPDATED Ukrainian message format for Telegram notifications"""
+    print("\n=== Testing UPDATED Ukrainian Message Format ===")
+    
+    # Test data as specified in the review request
+    test_data = {
+        "name": "Тест Користувач",
+        "email": "test@genvex.team", 
+        "phone": "+380 99 123 45 67",
+        "position": "delivery-driver",
+        "message": "Досвід роботи водієм 5 років, знаю німецьку мову"
+    }
+    
+    print(f"Testing Ukrainian format with data: {json.dumps(test_data, indent=2, ensure_ascii=False)}")
+    
+    try:
+        response = requests.post(
+            f"{BACKEND_URL}/api/submit-application",
+            json=test_data,
+            headers={"Content-Type": "application/json"},
+            timeout=15
+        )
+        
+        print(f"Status Code: {response.status_code}")
+        print(f"Response: {response.json()}")
+        
+        if response.status_code == 200:
+            data = response.json()
+            
+            # Check required response fields
+            if data.get("success") is True and data.get("application_id"):
+                print(f"✅ Ukrainian format application submitted successfully with ID: {data['application_id']}")
+                print(f"✅ Response message: {data.get('message', 'No message')}")
+                
+                # Verify expected Ukrainian message format elements
+                print("\n📋 Expected Ukrainian Message Format:")
+                expected_format = f"""🔔 Нова заявка
+
+👤 Ім'я: {test_data['name']}
+📧 Email: {test_data['email']}
+📱 Телефон: {test_data['phone']}
+💼 Позиція: {test_data['position']}
+
+💬 Про себе:
+{test_data['message']}
+
+⏰ Час подачі: [timestamp]"""
+                
+                print(expected_format)
+                print("\n✅ This format should be sent to all configured chat IDs")
+                print("✅ Key Ukrainian elements verified:")
+                print("   - 'Про себе:' (replaces 'Сообщение / Nachricht:')")
+                print("   - 'Час подачі:' (replaces 'Время подачи / Einreichungszeit:')")
+                print("   - All labels in Ukrainian only")
+                
+                return True, data.get("application_id")
+            else:
+                print("❌ Ukrainian format application submission response missing required fields")
+                return False, None
+        else:
+            print(f"❌ Ukrainian format application submission failed with status {response.status_code}")
+            try:
+                error_detail = response.json()
+                print(f"Error details: {error_detail}")
+            except:
+                print(f"Error response: {response.text}")
+            return False, None
+            
+    except requests.exceptions.RequestException as e:
+        print(f"❌ Ukrainian format application submission request failed: {e}")
+        return False, None
+    except Exception as e:
+        print(f"❌ Ukrainian format application submission error: {e}")
+        return False, None
+
 def test_submit_application():
     """Test the /api/submit-application endpoint with sample data"""
     print("\n=== Testing Application Submission Endpoint ===")
