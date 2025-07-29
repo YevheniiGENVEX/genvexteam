@@ -90,6 +90,17 @@ const Header_UA = () => {
             </button>
           </nav>
 
+          {/* Theme Switcher */}
+          <button
+            onClick={toggleTheme}
+            className="hidden md:flex items-center justify-center w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 transition-all duration-200 mx-4"
+            title={isDarkMode ? "Перемкнути на світлу тему" : "Перемкнути на темну тему"}
+          >
+            <span className="text-xl">
+              {isDarkMode ? "☀️" : "🌙"}
+            </span>
+          </button>
+
           {/* CTA Button */}
           <Button 
             onClick={() => scrollToSection('contact')}
