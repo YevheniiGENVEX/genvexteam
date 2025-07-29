@@ -52,17 +52,17 @@ const FAQ = () => {
   }
 
   return (
-    <section id="faq" className="py-16 bg-gray-50">
+    <section id="faq" className="py-16 bg-gray-50 dark:bg-gray-900">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-12">
-          <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
-            <HelpCircle className="h-8 w-8 text-blue-600" />
+          <div className="bg-blue-100 dark:bg-blue-900/30 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+            <HelpCircle className="h-8 w-8 text-blue-600 dark:text-blue-400" />
           </div>
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
             FAQ for Applicants
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
             Find answers to the most common questions about joining GENVEX Team. 
             Can't find what you're looking for? Don't hesitate to contact us directly.
           </p>
