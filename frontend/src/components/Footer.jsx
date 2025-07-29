@@ -27,7 +27,7 @@ const Footer = () => {
               beim Aufbau von Karrieren in der wachsenden Logistikbranche verschrieben hat.
             </p>
             <p className="text-gray-400 text-sm">
-              Offizieller Amazon DSP | Service für Hamburg und Umgebung
+              Offizieller Amazon Partner | Service für Hamburg und Umgebung
             </p>
           </div>
 
