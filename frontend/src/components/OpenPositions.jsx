@@ -19,7 +19,7 @@ const OpenPositions = () => {
   ];
 
   const offerings = [
-    "Attraktives Gehalt von €15,50/Stunde",
+    "Attraktives Gehalt von €15,50 brutto/Stunde",
     "Zusätzlich €10 netto täglich für Verpflegung",
     "Umfassende bezahlte Schulungsprogramme",
     "Vollzeitstelle mit 40 Stunden/Woche",
