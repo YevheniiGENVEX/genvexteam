@@ -147,7 +147,7 @@ const OpenPositions = () => {
                 Bereit, Ihre Reise zu starten?
               </h3>
               <p className="text-gray-600 mb-6">
-                Werden Sie noch heute Teil des GENVEX Teams und werden Sie Teil von Hamburgs vertrauensvollstem Lieferservice.
+                Werden Sie noch heute Teil des freundlichen GENVEX Teams und werden Sie Teil von Hamburgs vertrauensvollem Lieferservice.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button 
