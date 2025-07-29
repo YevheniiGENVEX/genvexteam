@@ -62,11 +62,11 @@ def test_submit_application():
     
     # Sample application data as specified in the review request
     test_data = {
-        "name": "Test User",
-        "email": "test@example.com",
-        "phone": "+49 123 456 789",
+        "name": "Fixed Test User",
+        "email": "fixedtest@example.com",
+        "phone": "+49 987 654 321",
         "position": "delivery-driver",
-        "message": "Test application message"
+        "message": "Testing fixed Telegram integration"
     }
     
     print(f"Submitting test application: {json.dumps(test_data, indent=2)}")
