@@ -21,7 +21,7 @@ export const mockData = {
     {
       id: 1,
       question: "Wie sind die Arbeitszeiten für Zustellfahrer?",
-      answer: "Unsere Zustellfahrer arbeiten normalerweise in 8-Stunden-Schichten, die gegen 8:00 Uhr beginnen. Sie laden um 10:50 Uhr und fahren um 11:00 Uhr los. Die Rückkehr ist um 18:00 Uhr. Wir bieten Vollzeitstellen mit etwa 40 Stunden pro Woche an."
+      answer: "Unsere Zustellfahrer arbeiten in Schichten, die um 10:40 Uhr morgens im Depot beginnen. Das Beladen erfolgt um 10:50 Uhr, die Abfahrt um 11:10 Uhr und die Rückkehr um 19:10 Uhr. Wir bieten Vollzeitstellen mit etwa 40 Stunden pro Woche an. (Der Arbeitsplan kann flexibel und individuell abgestimmt werden.)"
     },
     {
       id: 2,
