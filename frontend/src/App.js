@@ -119,11 +119,12 @@ function App() {
   // Load theme preference from localStorage on mount
   React.useEffect(() => {
     const savedTheme = localStorage.getItem('theme');
-    if (savedTheme === 'dark') {
-      setIsDarkMode(true);
+    const prefersDark = savedTheme === 'dark';
+    setIsDarkMode(prefersDark);
+    
+    if (prefersDark) {
       document.documentElement.classList.add('dark');
     } else {
-      setIsDarkMode(false);
       document.documentElement.classList.remove('dark');
     }
   }, []);
@@ -134,23 +135,27 @@ function App() {
     window.scrollTo(0, 0);
   };
 
-  const handleThemeChange = () => {
-    console.log('Theme change triggered, current isDarkMode:', isDarkMode);
-    const newTheme = !isDarkMode;
-    setIsDarkMode(newTheme);
+  const handleThemeChange = React.useCallback(() => {
+    console.log('handleThemeChange called, current isDarkMode:', isDarkMode);
     
-    console.log('Setting theme to:', newTheme ? 'dark' : 'light');
+    // Toggle theme immediately on DOM
+    const htmlElement = document.documentElement;
+    const willBeDark = !isDarkMode;
     
-    if (newTheme) {
-      document.documentElement.classList.add('dark');
+    if (willBeDark) {
+      htmlElement.classList.add('dark');
       localStorage.setItem('theme', 'dark');
-      console.log('Applied dark theme');
+      console.log('Applied dark theme to DOM');
     } else {
-      document.documentElement.classList.remove('dark');
+      htmlElement.classList.remove('dark');
       localStorage.setItem('theme', 'light');
-      console.log('Applied light theme');
+      console.log('Applied light theme to DOM');
     }
-  };
+    
+    // Update React state
+    setIsDarkMode(willBeDark);
+    console.log('Updated state to:', willBeDark);
+  }, [isDarkMode]);
 
   return (
     <div className="App">
