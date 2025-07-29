@@ -79,24 +79,24 @@ const LifeAtGenvex = () => {
         {/* Typical Day Tab */}
         {activeTab === 'typical-day' && (
           <div className="space-y-8">
-            <Card className="shadow-lg border-0">
-              <CardHeader className="bg-gradient-to-r from-blue-50 to-white">
-                <CardTitle className="text-2xl text-gray-900 flex items-center">
-                  <Clock className="h-6 w-6 mr-2 text-blue-600" />
-                  Ein Tag im Leben eines GENVEX Fahrers <span className="text-sm font-normal text-gray-500">(optional)</span>
+            <Card className="shadow-lg border-0 dark:bg-gray-800 dark:border-gray-700">
+              <CardHeader className="bg-gradient-to-r from-blue-50 to-white dark:from-gray-700 dark:to-gray-800">
+                <CardTitle className="text-2xl text-gray-900 dark:text-white flex items-center">
+                  <Clock className="h-6 w-6 mr-2 text-blue-600 dark:text-blue-400" />
+                  Ein Tag im Leben eines GENVEX Fahrers <span className="text-sm font-normal text-gray-500 dark:text-gray-400">(optional)</span>
                 </CardTitle>
               </CardHeader>
-              <CardContent className="p-8">
+              <CardContent className="p-8 dark:bg-gray-800">
                 <div className="space-y-6">
                   {dailySchedule.map((item, index) => (
-                    <div key={index} className="flex items-start space-x-4 p-4 rounded-lg hover:bg-blue-50 transition-colors duration-200">
-                      <div className="bg-blue-100 p-2 rounded-full">
-                        <item.icon className="h-5 w-5 text-blue-600" />
+                    <div key={index} className="flex items-start space-x-4 p-4 rounded-lg hover:bg-blue-50 dark:hover:bg-gray-700 transition-colors duration-200">
+                      <div className="bg-blue-100 dark:bg-gray-600 p-2 rounded-full">
+                        <item.icon className="h-5 w-5 text-blue-600 dark:text-blue-400" />
                       </div>
                       <div className="flex-1">
                         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between">
                           <div>
-                            <Badge className="bg-blue-600 text-white mb-2">
+                            <Badge className="bg-blue-600 dark:bg-blue-500 text-white mb-2">
                               {item.time}
                             </Badge>
                             <p className="text-gray-800 font-medium">{item.activity}</p>
