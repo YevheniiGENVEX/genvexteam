@@ -106,7 +106,7 @@ user_problem_statement: "Implement Telegram Bot integration for GENVEX Team cont
 
 backend:
   - task: "Telegram Bot Integration for Contact Form"
-    implemented: false
+    implemented: true
     working: "NA"
     file: "server.py"
     stuck_count: 0
@@ -116,9 +116,12 @@ backend:
       - working: "NA"
         agent: "main"
         comment: "Starting implementation of Telegram Bot API integration. Bot token and chat IDs are available in .env file."
+      - working: "NA"
+        agent: "main"
+        comment: "Implemented Telegram Bot integration using httpx. Added send_telegram_notification function and /api/submit-application endpoint."
 
   - task: "Contact Form API Endpoint"
-    implemented: false
+    implemented: true
     working: "NA"
     file: "server.py"
     stuck_count: 0
@@ -128,12 +131,15 @@ backend:
       - working: "NA"
         agent: "main"
         comment: "Need to create /api/submit-application endpoint to replace mock API functionality."
+      - working: "NA"
+        agent: "main"
+        comment: "Implemented /api/submit-application endpoint with Pydantic models and MongoDB storage."
 
 frontend:
   - task: "Update Contact Form to Use Real API"
-    implemented: false
+    implemented: true
     working: "NA"
-    file: "Contact.jsx, Contact_UA.jsx"
+    file: "Contact.jsx, Contact_UA.jsx, services/api.js"
     stuck_count: 0
     priority: "medium"
     needs_retesting: true
@@ -141,6 +147,9 @@ frontend:
       - working: "NA"
         agent: "main"
         comment: "Frontend forms currently use mockAPI, need to update to call real backend endpoint."
+      - working: "NA"
+        agent: "main"
+        comment: "Created api.js service file and updated both Contact components to use real API instead of mock."
 
 metadata:
   created_by: "main_agent"
