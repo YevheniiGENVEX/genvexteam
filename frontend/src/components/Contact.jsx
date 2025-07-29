@@ -145,7 +145,7 @@ const Contact = () => {
                 <ul className="space-y-2 text-sm text-gray-700">
                   <li>• Bewerbungsbestätigung innerhalb von 24 Stunden</li>
                   <li>• Erstes Telefon-Screening innerhalb von 2-3 Werktagen</li>
-                  <li>• Kompletter Einstellungsprozess dauert normalerweise 1-2 Wochen</li>
+                  <li>• Kompletter Einstellungsprozess dauert normalerweise 1-2 Wochen (Training und Einarbeitung bis zum selbstständigen Arbeitsstart- bezahlt)</li>
                   <li>• Direkter Telefonsupport während der Geschäftszeiten</li>
                 </ul>
               </CardContent>
