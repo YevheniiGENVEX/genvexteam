@@ -23,7 +23,7 @@ import Footer_UA from "./components/Footer_UA";
 // Theme switcher component
 const ThemeSwitcher = ({ isDark, onThemeChange }) => {
   return (
-    <div className="fixed top-4 right-4 z-50 bg-blue-100 dark:bg-gray-800 shadow-xl rounded-xl p-3 border-2 border-blue-300 dark:border-gray-600">
+    <div className="fixed top-4 right-20 z-50 bg-blue-100 dark:bg-gray-800 shadow-xl rounded-xl p-3 border-2 border-blue-300 dark:border-gray-600">
       <button
         onClick={() => {
           console.log('Theme switcher button clicked, current mode:', isDark);
