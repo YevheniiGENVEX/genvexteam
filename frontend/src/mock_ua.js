@@ -11,7 +11,7 @@ export const mockData_UA = {
 
   // Контактна інформація
   contact: {
-    address: "Zamok 20, 21029 Гамбург, Німеччина",
+    address: "Peutestrasse 32, 20539 Гамбург, Німеччина",
     email: "genvexteam@gmail.com",
     phone: "+49 176 400 0000"
   },
