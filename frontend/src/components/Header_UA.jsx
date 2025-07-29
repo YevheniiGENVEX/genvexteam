@@ -72,7 +72,7 @@ const Header_UA = () => {
             </button>
             <button
               onClick={() => scrollToSection('life')}
-              className="text-gray-700 hover:text-blue-600 transition-colors duration-200 font-medium"
+              className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200 font-medium"
             >
               Життя в GENVEX Team
             </button>
