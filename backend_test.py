@@ -309,7 +309,9 @@ def run_comprehensive_test():
         "telegram_api": False,
         "chat_id_tests": {},
         "application_submission": False,
-        "application_id": None
+        "ukrainian_format_test": False,
+        "application_id": None,
+        "ukrainian_application_id": None
     }
     
     # Test 1: Health Check
@@ -329,18 +331,24 @@ def run_comprehensive_test():
     results["application_submission"] = success
     results["application_id"] = app_id
     
+    # Test 6: Ukrainian Message Format Test (NEW)
+    ukrainian_success, ukrainian_app_id = test_ukrainian_message_format()
+    results["ukrainian_format_test"] = ukrainian_success
+    results["ukrainian_application_id"] = ukrainian_app_id
+    
     # Summary
     print("\n" + "=" * 60)
     print("📊 TEST RESULTS SUMMARY")
     print("=" * 60)
     
-    total_tests = 5
+    total_tests = 6
     passed_tests = sum([
         results["health_check"],
         results["telegram_config"], 
         results["telegram_api"],
         len([r for r in results["chat_id_tests"].values() if r == "reachable"]) > 0,  # At least one chat ID working
-        results["application_submission"]
+        results["application_submission"],
+        results["ukrainian_format_test"]
     ])
     
     print(f"Health Check Endpoint: {'✅ PASS' if results['health_check'] else '❌ FAIL'}")
@@ -360,13 +368,17 @@ def run_comprehensive_test():
         print(f"Chat ID Accessibility: ❌ FAIL (0/{len(results['chat_id_tests'])} reachable)")
     
     print(f"Application Submission: {'✅ PASS' if results['application_submission'] else '❌ FAIL'}")
+    print(f"Ukrainian Format Test: {'✅ PASS' if results['ukrainian_format_test'] else '❌ FAIL'}")
     
     if results["application_id"]:
         print(f"Generated Application ID: {results['application_id']}")
     
+    if results["ukrainian_application_id"]:
+        print(f"Ukrainian Format Application ID: {results['ukrainian_application_id']}")
+    
     print(f"\nOverall Result: {passed_tests}/{total_tests} tests passed")
     
-    if passed_tests >= 4:  # Allow partial success if at least one chat ID works
+    if passed_tests >= 5:  # Allow partial success if at least one chat ID works
         print("🎉 TESTS PASSED - Backend is working correctly!")
         if len(reachable_chats) < len(results["chat_id_tests"]):
             print("⚠️  Note: Some chat IDs are not reachable, but core functionality works")
