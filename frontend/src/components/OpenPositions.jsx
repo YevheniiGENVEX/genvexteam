@@ -66,7 +66,7 @@ const OpenPositions = () => {
                   </div>
                   <div className="flex items-center">
                     <Euro className="h-4 w-4 mr-1 text-blue-600" />
-                    €15,50/Stunde
+                    €15,50 brutto/Stunde
                   </div>
                   <div className="flex items-center">
                     <UtensilsCrossed className="h-4 w-4 mr-1 text-blue-600" />
