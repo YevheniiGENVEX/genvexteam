@@ -278,18 +278,6 @@ const Contact = () => {
                     </Button>
                   </div>
                 </form>
-
-                <div className="mt-6 pt-6 border-t border-gray-200 text-center">
-                  <p className="text-sm text-gray-600">
-                    Lieber anrufen? Erreichen Sie uns unter{' '}
-                    <a 
-                      href="tel:+4917640099823" 
-                      className="text-blue-600 hover:text-blue-700 font-medium transition-colors duration-200"
-                    >
-                      +49 176 400 99823
-                    </a>
-                  </p>
-                </div>
               </CardContent>
             </Card>
           </div>
