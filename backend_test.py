@@ -124,11 +124,15 @@ def test_telegram_bot_config():
             print("❌ Telegram bot token not found or incorrect")
             return False
             
-        # Check for chat IDs - now only the working chat ID after fix
-        if 'TELEGRAM_CHAT_IDS="900121043"' in env_content:
-            print("✅ Telegram chat IDs configured correctly (fixed - only working chat ID)")
+        # Check for chat IDs - testing multiple chat IDs including group
+        if 'TELEGRAM_CHAT_IDS="900121043,5392991169,-1002586354276"' in env_content:
+            print("✅ Telegram chat IDs configured correctly (testing multiple chat IDs including group)")
+            print("   - 900121043 (known working)")
+            print("   - 5392991169 (previously showed 'chat not found')")
+            print("   - -1002586354276 (new group chat ID)")
         else:
             print("❌ Telegram chat IDs not found or incorrect")
+            print(f"Expected: 900121043,5392991169,-1002586354276")
             return False
             
         return True
