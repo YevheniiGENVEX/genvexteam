@@ -6,7 +6,7 @@ import { Input } from './ui/input';
 import { Textarea } from './ui/textarea';
 import { Label } from './ui/label';
 import { Badge } from './ui/badge';
-import { mockAPI_UA } from '../mock_ua';
+import { api } from '../services/api';
 
 const Contact_UA = () => {
   const [formData, setFormData] = useState({
