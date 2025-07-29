@@ -122,7 +122,7 @@ const Footer_UA = () => {
         <div className="border-t border-gray-700 mt-8 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="text-gray-400 text-sm">
-              <p>&copy; 2024 GENVEX Team. Всі права захищені.</p>
+              <p>&copy; 2025 GENVEX Team. Всі права захищені.</p>
             </div>
             
             <div className="flex items-center space-x-4 mt-4 md:mt-0 text-sm text-gray-400">
