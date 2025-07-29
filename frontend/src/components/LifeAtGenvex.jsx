@@ -127,20 +127,52 @@ const LifeAtGenvex = () => {
         {activeTab === 'team-photos' && (
           <div className="space-y-8">
             <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-              {teamPhotos.map((photo, index) => (
-                <Card key={index} className="shadow-lg border-0 overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                  <div className="h-48 bg-cover bg-center" style={{ backgroundImage: `url(${photo.image})` }}>
-                  </div>
-                  <CardContent className="p-6">
-                    <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                      {photo.title}
-                    </h3>
-                    <p className="text-gray-600">
-                      {photo.description}
-                    </p>
-                  </CardContent>
-                </Card>
-              ))}
+              {teamPhotos.map((photo, index) => {
+                const isLoadingStation = photo.title === "Ladestation";
+                
+                if (isLoadingStation) {
+                  return (
+                    <a
+                      key={index}
+                      href="https://maps.app.goo.gl/dHkAXQWg7iYmye2y8"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block"
+                    >
+                      <Card className="shadow-lg border-0 overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer">
+                        <div className="h-48 bg-cover bg-center" style={{ backgroundImage: `url(${photo.image})` }}>
+                        </div>
+                        <CardContent className="p-6">
+                          <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                            {photo.title}
+                          </h3>
+                          <p className="text-gray-600">
+                            {photo.description}
+                          </p>
+                          <p className="text-blue-600 text-sm mt-2 font-medium">
+                            🗺️ Auf Google Maps ansehen
+                          </p>
+                        </CardContent>
+                      </Card>
+                    </a>
+                  );
+                } else {
+                  return (
+                    <Card key={index} className="shadow-lg border-0 overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                      <div className="h-48 bg-cover bg-center" style={{ backgroundImage: `url(${photo.image})` }}>
+                      </div>
+                      <CardContent className="p-6">
+                        <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                          {photo.title}
+                        </h3>
+                        <p className="text-gray-600">
+                          {photo.description}
+                        </p>
+                      </CardContent>
+                    </Card>
+                  );
+                }
+              })}
             </div>
 
             {/* Video Section */}
