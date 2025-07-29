@@ -124,7 +124,7 @@ const Homepage = () => {
                 </div>
                 <div className="flex items-start space-x-3">
                   <CheckCircle className="h-6 w-6 text-blue-600 mt-1 flex-shrink-0" />
-                  <p className="text-gray-700">Attraktive Vergütung: €15,50/Stunde + €10 täglich für Verpflegung (netto)</p>
+                  <p className="text-gray-700">Attraktive Vergütung: €15,50 brutto/Stunde + €10 täglich für Verpflegung (netto)</p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <CheckCircle className="h-6 w-6 text-blue-600 mt-1 flex-shrink-0" />
