@@ -202,7 +202,7 @@ const Contact = () => {
                   </div>
 
                   <div>
-                    <Label htmlFor="email">E-Mail-Adresse *</Label>
+                    <Label htmlFor="email" className="text-gray-700 dark:text-gray-300">E-Mail-Adresse *</Label>
                     <Input
                       id="email"
                       name="email"
@@ -210,7 +210,7 @@ const Contact = () => {
                       required
                       value={formData.email}
                       onChange={handleInputChange}
-                      className="mt-1"
+                      className="mt-1 dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:placeholder-gray-400"
                       placeholder="ihre.email@beispiel.com"
                     />
                   </div>
