@@ -5,7 +5,7 @@ export const mockData_UA = {
   company: {
     name: "GENVEX Team",
     location: "Гамбург, Німеччина",
-    type: "Офіційний Amazon DSP",
+    type: "Офіційний партнер Amazon",
     description: "Провідний партнер служби доставки Amazon у Гамбурзі, відданий досконалості в службах доставки та задоволенню працівників."
   },
 
