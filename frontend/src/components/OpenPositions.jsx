@@ -116,22 +116,19 @@ const OpenPositions = () => {
             </div>
 
             {/* Job Description */}
-            <div className="mt-8 pt-8 border-t border-gray-200">
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">
-                Über die Position
+            <div className="mt-8 pt-8 border-t border-gray-200 dark:border-gray-700">
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
+                Ihre Rolle
               </h3>
-              <p className="text-gray-700 mb-6 leading-relaxed">
-                Als Zustellfahrer im GENVEX Team werden Sie das Gesicht von Amazon in Hamburg und sorgen dafür, 
-                dass Kunden ihre Pakete sicher und pünktlich erhalten. Sie arbeiten mit modernster Liefertechnologie, 
-                fahren moderne Fahrzeuge und sind Teil eines unterstützenden Teams, das Ihre Beiträge schätzt. 
-                Das ist mehr als nur ein Job – es ist eine Gelegenheit, eine Karriere in der wachsenden Logistikbranche aufzubauen.
+              <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+                Als Zustellfahrer im GENVEX Team werden Sie das Gesicht von Amazon in Hamburg und sorgen dafür, dass Kunden ihre Pakete sicher und pünktlich erhalten. Sie arbeiten mit modernster Liefertechnologie und sind Teil eines unterstützenden Teams, das Ihre Erfolge schätzt und in Ihren Erfolg investiert. Ihre Karriere in der wachsenden Logistikbranche beginnt hier.
               </p>
               
-              <div className="bg-blue-50 rounded-lg p-6">
-                <h4 className="text-lg font-semibold text-gray-900 mb-3">
+              <div className="bg-blue-50 dark:bg-gray-700 rounded-lg p-6">
+                <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-3">
                   Warum diese Position perfekt für Sie ist:
                 </h4>
-                <ul className="text-gray-700 space-y-2">
+                <ul className="text-gray-700 dark:text-gray-300 space-y-2">
                   <li>• Selbstständig arbeiten und trotzdem Teil eines unterstützenden Teams sein</li>
                   <li>• Aktiv bleiben und während des Arbeitstages engagiert sein</li>
                   <li>• Mit Kunden interagieren und einen positiven Einfluss in der Gemeinschaft haben</li>
@@ -143,11 +140,11 @@ const OpenPositions = () => {
             </div>
 
             {/* CTA Section */}
-            <div className="mt-8 pt-8 border-t border-gray-200 text-center">
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">
+            <div className="mt-8 pt-8 border-t border-gray-200 dark:border-gray-700 text-center">
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
                 Bereit, Ihre Reise zu starten?
               </h3>
-              <p className="text-gray-600 mb-6">
+              <p className="text-gray-600 dark:text-gray-300 mb-6">
                 Werden Sie noch heute Teil des freundlichen GENVEX Teams und werden Sie Teil von Hamburgs vertrauensvollem Lieferservice.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
