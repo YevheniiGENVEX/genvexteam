@@ -107,8 +107,8 @@ const OpenPositions = () => {
                 <div className="space-y-3">
                   {offerings.map((offer, index) => (
                     <div key={index} className="flex items-start space-x-2">
-                      <CheckCircle className="h-5 w-5 text-blue-600 mt-0.5 flex-shrink-0" />
-                      <span className="text-gray-700">{offer}</span>
+                      <CheckCircle className="h-5 w-5 text-blue-600 dark:text-blue-400 mt-0.5 flex-shrink-0" />
+                      <span className="text-gray-700 dark:text-gray-300">{offer}</span>
                     </div>
                   ))}
                 </div>
