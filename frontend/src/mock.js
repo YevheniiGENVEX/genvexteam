@@ -5,7 +5,7 @@ export const mockData = {
   company: {
     name: "GENVEX Team",
     location: "Hamburg, Deutschland",
-    type: "Offizieller Amazon DSP",
+    type: "Offizieller Amazon Partner",
     description: "Hamburgs führender Amazon Delivery Service Partner, der sich der Exzellenz in Lieferdienstleistungen und Mitarbeiterzufriedenheit verschrieben hat."
   },
 
