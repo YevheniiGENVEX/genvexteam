@@ -71,27 +71,27 @@ const FAQ = () => {
         {/* FAQ Items */}
         <div className="space-y-4">
           {faqs.map((faq) => (
-            <Card key={faq.id} className="shadow-lg border-0 overflow-hidden">
+            <Card key={faq.id} className="shadow-lg border-0 overflow-hidden dark:bg-gray-800 dark:shadow-gray-900/20">
               <CardContent className="p-0">
                 <button
                   onClick={() => toggleItem(faq.id)}
-                  className="w-full px-6 py-4 text-left flex items-center justify-between hover:bg-blue-50 transition-colors duration-200"
+                  className="w-full px-6 py-4 text-left flex items-center justify-between hover:bg-blue-50 dark:hover:bg-gray-700 transition-colors duration-200"
                 >
-                  <h3 className="text-lg font-semibold text-gray-900 pr-4">
+                  <h3 className="text-lg font-semibold text-gray-900 dark:text-white pr-4">
                     {faq.question}
                   </h3>
                   <div className="flex-shrink-0">
                     {openItems[faq.id] ? (
-                      <ChevronUp className="h-5 w-5 text-blue-600" />
+                      <ChevronUp className="h-5 w-5 text-blue-600 dark:text-blue-400" />
                     ) : (
-                      <ChevronDown className="h-5 w-5 text-blue-600" />
+                      <ChevronDown className="h-5 w-5 text-blue-600 dark:text-blue-400" />
                     )}
                   </div>
                 </button>
                 
                 {openItems[faq.id] && (
-                  <div className="px-6 pb-4 border-t border-gray-100">
-                    <p className="text-gray-700 leading-relaxed pt-4">
+                  <div className="px-6 pb-4 border-t border-gray-100 dark:border-gray-700">
+                    <p className="text-gray-700 dark:text-gray-300 leading-relaxed pt-4">
                       {faq.answer}
                     </p>
                   </div>
