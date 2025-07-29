@@ -84,15 +84,15 @@ const OpenPositions = () => {
             <div className="grid md:grid-cols-2 gap-8">
               {/* Requirements */}
               <div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-4 flex items-center">
-                  <GraduationCap className="h-5 w-5 mr-2 text-blue-600" />
+                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4 flex items-center">
+                  <GraduationCap className="h-5 w-5 mr-2 text-blue-600 dark:text-blue-400" />
                   Anforderungen
                 </h3>
                 <div className="space-y-3">
                   {requirements.map((req, index) => (
                     <div key={index} className="flex items-start space-x-2">
-                      <CheckCircle className="h-5 w-5 text-blue-600 mt-0.5 flex-shrink-0" />
-                      <span className="text-gray-700">{req}</span>
+                      <CheckCircle className="h-5 w-5 text-blue-600 dark:text-blue-400 mt-0.5 flex-shrink-0" />
+                      <span className="text-gray-700 dark:text-gray-300">{req}</span>
                     </div>
                   ))}
                 </div>
