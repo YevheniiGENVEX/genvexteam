@@ -94,48 +94,6 @@ const UkrainianVersion = ({ onLanguageChange }) => (
 
 function App() {
   const [language, setLanguage] = React.useState('de');
-  const [isDarkMode, setIsDarkMode] = React.useState(false);
-
-  // Load theme preference from localStorage on mount
-  React.useEffect(() => {
-    const savedTheme = localStorage.getItem('theme');
-    const prefersDark = savedTheme === 'dark';
-    setIsDarkMode(prefersDark);
-    
-    if (prefersDark) {
-      document.documentElement.classList.add('dark');
-    } else {
-      document.documentElement.classList.remove('dark');
-    }
-  }, []);
-
-  // Add global theme toggle function to window
-  React.useEffect(() => {
-    window.toggleTheme = () => {
-      const htmlElement = document.documentElement;
-      const currentlyDark = htmlElement.classList.contains('dark');
-      
-      if (currentlyDark) {
-        htmlElement.classList.remove('dark');
-        localStorage.setItem('theme', 'light');
-        setIsDarkMode(false);
-        console.log('Switched to light mode');
-        
-        // Update button icon
-        const button = document.querySelector('#theme-toggle-btn');
-        if (button) button.innerHTML = '🌙';
-      } else {
-        htmlElement.classList.add('dark');
-        localStorage.setItem('theme', 'dark');
-        setIsDarkMode(true);
-        console.log('Switched to dark mode');
-        
-        // Update button icon
-        const button = document.querySelector('#theme-toggle-btn');
-        if (button) button.innerHTML = '☀️';
-      }
-    };
-  }, []);
 
   const handleLanguageChange = (newLang) => {
     setLanguage(newLang);
