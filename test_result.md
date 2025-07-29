@@ -101,3 +101,61 @@
 #====================================================================================================
 # Testing Data - Main Agent and testing sub agent both should log testing data below this section
 #====================================================================================================
+
+user_problem_statement: "Implement Telegram Bot integration for GENVEX Team contact form to send application notifications to specified chat IDs when users submit applications through the bilingual (German/Ukrainian) website contact form."
+
+backend:
+  - task: "Telegram Bot Integration for Contact Form"
+    implemented: false
+    working: "NA"
+    file: "server.py"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: true
+    status_history:
+      - working: "NA"
+        agent: "main"
+        comment: "Starting implementation of Telegram Bot API integration. Bot token and chat IDs are available in .env file."
+
+  - task: "Contact Form API Endpoint"
+    implemented: false
+    working: "NA"
+    file: "server.py"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: true
+    status_history:
+      - working: "NA"
+        agent: "main"
+        comment: "Need to create /api/submit-application endpoint to replace mock API functionality."
+
+frontend:
+  - task: "Update Contact Form to Use Real API"
+    implemented: false
+    working: "NA"
+    file: "Contact.jsx, Contact_UA.jsx"
+    stuck_count: 0
+    priority: "medium"
+    needs_retesting: true
+    status_history:
+      - working: "NA"
+        agent: "main"
+        comment: "Frontend forms currently use mockAPI, need to update to call real backend endpoint."
+
+metadata:
+  created_by: "main_agent"
+  version: "1.0"
+  test_sequence: 0
+  run_ui: false
+
+test_plan:
+  current_focus:
+    - "Telegram Bot Integration for Contact Form"
+    - "Contact Form API Endpoint"
+  stuck_tasks: []
+  test_all: false
+  test_priority: "high_first"
+
+agent_communication:
+  - agent: "main"
+    message: "Starting Telegram Bot integration implementation. Bot token: 8493941012:AAEIa1qTo1jtdD40O1CQfWFM-cha7nqCA10, Chat IDs: 900121043,5392991169. Need to install requests library for Telegram API calls."
