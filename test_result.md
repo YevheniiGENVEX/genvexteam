@@ -168,3 +168,5 @@ test_plan:
 agent_communication:
   - agent: "main"
     message: "Starting Telegram Bot integration implementation. Bot token: 8493941012:AAEIa1qTo1jtdD40O1CQfWFM-cha7nqCA10, Chat IDs: 900121043,5392991169. Need to install requests library for Telegram API calls."
+  - agent: "main"
+    message: "Implementation completed. Backend now has /api/submit-application endpoint that stores applications in MongoDB and sends Telegram notifications to specified chat IDs. Frontend updated to use real API instead of mock. Ready for testing."
