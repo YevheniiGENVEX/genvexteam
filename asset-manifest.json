@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/genvex.team/static/css/main.25156b12.css",
-    "main.js": "/genvex.team/static/js/main.c47c287f.js",
-    "index.html": "/genvex.team/index.html",
-    "main.25156b12.css.map": "/genvex.team/static/css/main.25156b12.css.map",
-    "main.c47c287f.js.map": "/genvex.team/static/js/main.c47c287f.js.map"
+    "main.css": "/static/css/main.25156b12.css",
+    "main.js": "/static/js/main.c47c287f.js",
+    "index.html": "/index.html",
+    "main.25156b12.css.map": "/static/css/main.25156b12.css.map",
+    "main.c47c287f.js.map": "/static/js/main.c47c287f.js.map"
   },
   "entrypoints": [
     "static/css/main.25156b12.css",
