@@ -49,11 +49,6 @@ export const mockData = {
       answer: "Fahrer sollten körperlich fit sein für das Pakethandling. 90% der Pakete wiegen maximal 5kg, nur sehr selten sind schwerere Pakete bis 23kg dabei. Wir bieten Schulungen zu ordnungsgemäßen Hebetechniken und Sicherheitsverfahren."
     },
     {
-      id: 7,
-      question: "Wie bewerbe ich mich und wie läuft der Einstellungsprozess ab?",
-      answer: "Reichen Sie Ihre Bewerbung über unser Kontaktformular oder per E-Mail ein. Der Prozess umfasst Bewerbungsüberprüfung, Telefoninterview, persönliches Interview und Hintergrundüberprüfung. Der gesamte Prozess dauert normalerweise 1-2 Wochen."
-    },
-    {
       id: 8,
       question: "Bieten Sie Vorteile und Karriereentwicklung an?",
       answer: "Wir bieten Krankenversicherung. Es gibt Möglichkeiten, zum Fahrtrainer, Dispatcher oder zu Führungsrollen in unserem wachsenden Netzwerk aufzusteigen."
