@@ -64,7 +64,7 @@ const Contact = () => {
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             Bereit, Ihre Karriere mit dem GENVEX Team zu starten? Kontaktieren Sie uns noch heute. 
-            Wir sind hier, um Ihre Fragen zu beantworten und Sie durch den Bewerbungsprozess zu führen.
+            Wir sind hier, um Ihre Fragen zu beantworten und Sie zu einem erfolgreichen Arbeitsstart zu führen.
           </p>
         </div>
 
