@@ -100,8 +100,8 @@ const OpenPositions = () => {
 
               {/* What We Offer */}
               <div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-4 flex items-center">
-                  <Users className="h-5 w-5 mr-2 text-blue-600" />
+                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4 flex items-center">
+                  <Users className="h-5 w-5 mr-2 text-blue-600 dark:text-blue-400" />
                   Was wir bieten
                 </h3>
                 <div className="space-y-3">
