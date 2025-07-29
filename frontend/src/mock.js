@@ -51,7 +51,7 @@ export const mockData = {
     {
       id: 8,
       question: "Bieten Sie Vorteile und Karriereentwicklung an?",
-      answer: "Wir bieten Krankenversicherung. Es gibt Möglichkeiten, zum Fahrtrainer, Dispatcher oder zu Führungsrollen in unserem wachsenden Netzwerk aufzusteigen."
+      answer: "Es gibt Möglichkeiten, zum Fahrtrainer, Dispatcher oder zu Führungsrollen in unserem wachsenden Netzwerk aufzusteigen."
     }
   ],
 
