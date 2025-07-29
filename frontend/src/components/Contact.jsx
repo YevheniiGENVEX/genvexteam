@@ -154,9 +154,9 @@ const Contact = () => {
 
           {/* Application Form */}
           <div>
-            <Card className="shadow-lg border-0">
-              <CardHeader className="bg-gradient-to-r from-blue-50 to-white">
-                <CardTitle className="text-xl text-gray-900 flex items-center">
+            <Card className="shadow-lg border-0 dark:bg-gray-800 dark:shadow-gray-900/20">
+              <CardHeader className="bg-gradient-to-r from-blue-50 to-white dark:from-gray-700 dark:to-gray-800">
+                <CardTitle className="text-xl text-gray-900 dark:text-white flex items-center">
                   <Send className="h-5 w-5 mr-2 text-blue-600" />
                   Senden Sie Ihre Bewerbung
                 </CardTitle>
